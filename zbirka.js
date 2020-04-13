@@ -220,6 +220,17 @@ for (var i = 1; i < broj; i++) {
 }
 console.log(suma);
 
+// 15.
+var broj = parseInt(prompt('unesite broj manji od 20'));
+
+if (broj < 20) {
+    for (let i = broj; i >= 1; i--) {
+        console.log(i);
+    }
+} else {
+    console.log(broj);
+}
+
 
 // todo Javascript 1
 
