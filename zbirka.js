@@ -115,7 +115,8 @@ if (godine === godine2) {
 } else {
     console.log('nema imenjaka ni vrsnjaka')
 }
-
+ // check
+ // adding some lines
 
 // todo Javascript 1
 
