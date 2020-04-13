@@ -135,6 +135,20 @@ if (a === 1 || b === 1 || c === 1) {
     } else { console.log('odlican') };
 }
 
+// 10.
+var pitanje = prompt('bojite li se zubara');
+
+switch (pitanje) {
+    case 'ne':
+        console.log('hrabri ste');
+        break;
+    case 'da':
+        console.log('i ja sam');
+        break;
+    default:
+        console.log('nepravilan unos');
+}
+
 // todo Javascript 1
 
 // todo Javascript 2
