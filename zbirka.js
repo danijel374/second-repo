@@ -200,6 +200,18 @@ switch (dan) {
         console.log('pogresan unos');
 }
 
+// 13.
+
+var text = prompt('unesite nekoliko rijeci');
+
+var brojac = 1;
+for (var i = 0; i < text.length; i++) {
+    if (text[i] == ' ') {
+        brojac++;
+    }
+}
+console.log(brojac);
+
 
 // todo Javascript 1
 
