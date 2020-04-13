@@ -212,6 +212,14 @@ for (var i = 0; i < text.length; i++) {
 }
 console.log(brojac);
 
+// 14.
+var broj = parseInt(prompt("Unesite broj"));
+var suma = 0;
+for (var i = 1; i < broj; i++) {
+    suma += i;
+}
+console.log(suma);
+
 
 // todo Javascript 1
 
