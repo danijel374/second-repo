@@ -171,6 +171,35 @@ if (broj > 0 && broj <= 20) {
 } else {
     console.log('pogersan unos');
 }
+//12.
+var dan = prompt('unesite dan');
+
+switch (dan) {
+    case 'ponedjeljak':
+        console.log('kada ce vise vikend');
+        break;
+    case 'utorak':
+        console.log('kada ce vise vikend');
+        break;
+    case 'srijeda':
+        console.log('kada ce vise vikend');
+        break;
+    case 'cetvrtak':
+        console.log('kada ce vise vikend');
+        break;
+    case 'petak':
+        console.log('Its Friday,firaday gotta get down on firday');
+        break;
+    case 'subota':
+        console.log('vikend je');
+        break;
+    case 'nedjelja':
+        console.log('vikend je');
+        break;
+    default:
+        console.log('pogresan unos');
+}
+
 
 // todo Javascript 1
 
