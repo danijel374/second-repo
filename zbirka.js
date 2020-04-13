@@ -149,6 +149,29 @@ switch (pitanje) {
         console.log('nepravilan unos');
 }
 
+// 11.
+var broj = parseInt(prompt('unesite broj manji od 25'));
+if (broj > 0 && broj <= 20) {
+    switch (broj) {
+        case 5:
+            console.log(broj);
+            break;
+        case 10:
+            console.log(broj);
+            break;
+        case 15:
+            console.log(broj);
+            break;
+        case 20:
+            console.log(broj);
+            break;
+        default:
+            console.log('broj nije visekratnik broja 5')
+    }
+} else {
+    console.log('pogersan unos');
+}
+
 // todo Javascript 1
 
 // todo Javascript 2
