@@ -115,8 +115,25 @@ if (godine === godine2) {
 } else {
     console.log('nema imenjaka ni vrsnjaka')
 }
- // check
- // adding some lines
+
+// 9.
+var a = parseInt(prompt('unesite prvu ocjenu')),
+    b = parseInt(prompt('unesite drugu ocjenu')),
+    c = parseInt(prompt('unesite trecu ocjenu')),
+    prosijek;
+
+if (a === 1 || b === 1 || c === 1) {
+    console.log('niste zadovoljili');
+} else {
+    prosijek = (a + b + c) / 3
+    if (prosijek < 2.5) {
+        console.log('dovoljan 2');
+    } else if (prosijek > 2.5 && prosijek < 3.5) {
+        console.log('dobar 3');
+    } else if (prosijek > 3.5 && prosijek < 4.5) {
+        console.log('vrlodobar');
+    } else { console.log('odlican') };
+}
 
 // todo Javascript 1
 
