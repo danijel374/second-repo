@@ -729,10 +729,44 @@ function zbrajanje(a, b) {
 }
 
 if (broj1 > broj2) {
-    console.log(oduzimanje(broj2, broj1));
+    console.log(oduzimanje(broj1, broj2));
 } else {
     console.log(zbrajanje(broj1, broj2));
 }
+
+// 2.
+var broj1 = parseInt(prompt('unesite prvi broj')),
+    broj2 = parseInt(prompt('unesite drugi broj')),
+    operacija = prompt('unesite operaciju');
+
+
+function kalkulator(prvi, drugi, operator) {
+    var result;
+    switch (operator) {
+        case '+':
+            result = prvi + drugi;
+            break;
+        case '-':
+            result = prvi - drugi;
+            break;
+        case '*':
+            result = prvi * drugi;
+            break;
+        case '/':
+            if (drugi === 0) {
+                result = Infinity;
+                console.log('nije moguce dijeliti sa nula: ' + result)
+            } else {
+                result = prvi / drugi;
+            }
+            break;
+        default:
+            console.log('pogresan unos');
+    }
+    return result;
+}
+
+console.log(kalkulator(broj1, broj2, operacija));
 
 
 // todo Javascript 2
