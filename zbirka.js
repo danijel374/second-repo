@@ -437,6 +437,19 @@ while (brojac < Infinity) {
     }
 }
 console.log('pokusaj broj ' + brojac)
+
+// 29.
+var brojac = 1, niz = [];
+
+while (brojac <= 8) {
+    niz.push(parseInt(prompt('unesite broj')));
+    brojac++;
+}
+console.log(niz[3]);
+console.log('zbroj prvog i petog je: ' + (niz[0] + niz[4]));
+
+// 30.
+
 // todo Javascript 1
 
 // todo Javascript 2
