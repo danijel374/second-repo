@@ -913,6 +913,26 @@ function vracamTirazu(unos) {
 
 console.log(vracamTirazu(input));
 
+// 9.
+
+var input = prompt('unesite neki tekst');
+var nizOdInputa = input.split(''),
+    brojacDvo = 0,
+    brojacRaz = 0;
+
+function brojiTID(unos) {
+    for (let i = 0; i < unos.length; i++) {
+        if (nizOdInputa[i] === ':') {
+            brojacDvo++;
+        } else if (nizOdInputa[i] === ' ') {
+            brojacRaz++;
+        }
+    }
+    return (brojacDvo + ' ' + brojacRaz)
+}
+
+console.log(brojiTID(input));
+
 
 
 
