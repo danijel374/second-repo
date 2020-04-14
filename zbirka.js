@@ -247,6 +247,36 @@ if (broj % 2 === 0) {
 
 }
 
+// ! 17. zadatak trazi ispis svakog drugog koji je djeljiv sa 2 i 3...i na prezentaciji je ovako po meni nije tocno
+var broj1 = parseInt(prompt('unesite prvi broj')),
+    broj2 = parseInt(prompt('unesite drugi broj')),
+    temp;
+if (broj1 > broj2) {
+    temp = broj2;
+    broj2 = broj1;
+    broj1 = temp;
+}
+
+for (let i = broj1; i < broj2; i++) {
+    if (i % 2 === 0 && i % 3 === 0) {
+        console.log(i);
+    }
+}
+
+// 18. 
+
+var broj = parseInt(prompt('unesite dvoznamenkasti broj'));
+
+if (broj > 9 && broj < 100) {
+    for (let i = 1; i < broj; i++) {
+        if (broj % i === 0) {
+            console.log(i);
+        }
+    }
+} else {
+    console.log('broj nije dvoznamenkast');
+}
+
 
 
 // todo Javascript 1
