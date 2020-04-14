@@ -388,6 +388,19 @@ for (var i = a; i < b; i += 4) {
 
 // 2,7,10,15,19
 
+//25. Što će se ispisati:
+var j = 80;
+for (var i = 8; i < j; i += 2) {
+    if (j % i === 0) {
+        console.log(i);
+    }
+    else {
+        console.log(j
+        );
+    }
+    j -= 10;
+}
+// 8,10,12,50,40,30
 
 // todo Javascript 1
 
