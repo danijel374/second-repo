@@ -498,7 +498,12 @@ do {
 } while (i < broj2);
 
 // 33.
+var niz = [];
 
+for (let i = 0; i < 10; i++) {
+    niz[i] = i + 1;
+}
+console.log(niz)
 
 // todo Javascript 1
 
