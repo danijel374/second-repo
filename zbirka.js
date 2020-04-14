@@ -787,6 +787,47 @@ if (provjera(odgovor) === 4) {
 
 provjera(odgovor);
 
+// 4. 
+var mjesec = prompt('unesite mjesec');
+
+function daniUMjesecu(mjesec) {
+    switch (mjesec) {
+        case "sijecanj":
+        case "siječanj":
+            return 31;
+        case "veljaca":
+        case "veljača":
+            return '28/29';
+        case "ozuljak":
+        case "ožuljak":
+            return 31
+        case "travanj":
+            return 30;
+        case "svibanj":
+            console.log(31);
+            break;
+        case "lipanj":
+            return 30;
+        case "srpanj":
+            return 31;
+        case ("kolovoz"):
+            return 31;
+        case ("rujan"):
+            return 30;
+        case ("listopad"):
+            return 31;
+        case ("studeni"):
+            return 30;
+        case ("prosinac"):
+            return 31;
+        default:
+            console.log("unesite valjani mjesec")
+    }
+}
+
+var dani = daniUMjesecu(mjesec);
+console.log(dani);
+
 
 
 // todo Javascript 2
