@@ -362,14 +362,31 @@ for (var i = a; i < b; i += 3) {
         console.log(i);
     }
 }
-// ISPIS:
-/* 3
-6 = 6
-6
-9
-11
-14 */
+//  ISPIS:
+// 3
+// 6 = 6
+// 6
+// 9
+// 11
+// 14 
 
+// 24. Sto ce se ispisati:
+var a = 2, b = 20, c = '6';
+for (var i = a; i < b; i += 4) {
+    if (i === c) {
+        console.log(i + " = " + c);
+    }
+    if (b % i === 0
+    ) {
+        console.log(
+            i);
+    }
+    else {
+        console.log(i + 1);
+    }
+}
+
+// 2,7,10,15,19
 
 
 // todo Javascript 1
