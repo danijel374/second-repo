@@ -542,6 +542,7 @@ for (let i = 0; i < niz.length; i++) {
 }
 text = niz.join('')
 console.log('recenica bez suglasnika je: ' + text)
+
 // TODO 36. Zanima me npr ako imamo minus brojeve kako bi ovaj zadatak uradili 
 var niz = [87, 93, 11, 27, 38, 100, 42, 31, 8, 40],
     min = niz[0],
@@ -571,9 +572,23 @@ if (array.length % 2 !== 0) {
     console.log('prvi je: ' + array[0] + ' zadnji je: ' + array[array.length - 1] + ' srednji su: ' + srednji + ' ' + srednji2)
 }
 
+// 38. 
+var niz1 = [], niz2 = [], input, zbroj = 0;
 
+do {
+    input = parseInt(prompt('unesite broj'));
+    niz1.push(input);
+    zbroj += input;
+} while (zbroj < 150)
+console.log(niz1);
 
-
+for (let i = 0; i < niz1.length; i++) {
+    if (niz1[i] % 2 !== 0) {
+        niz2.push(niz1[i]);
+    }
+}
+niz2.sort(function (a, b) { return b - a });
+console.log(niz2);
 
 
 // todo Javascript 1
