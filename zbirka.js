@@ -675,6 +675,40 @@ if (sumParni > sumNeparni) {
     console.log('zbroj neparnih je veci ')
 }
 
+// 43. 
+var niz = [],
+    input,
+    min,
+    max,
+    manjiPremaVecem,
+    veciPremaManjim;
+
+for (let i = 0; i < 10; i++) {
+    input = parseInt(prompt('unesite broj'));
+    niz.push(input);
+}
+
+min = niz[0];
+max = niz[0];
+
+for (let i = 0; i < niz.length; i++) {
+    if (niz[i] > max) {
+        max = niz[i];
+    } else if (niz[i] < min) {
+        min = niz[i];
+    }
+}
+console.log('najmanji je: ' + min + ' najveci je: ' + max);
+
+manjiPremaVecem = niz.sort(function (a, b) {
+    return a - b;
+});
+console.log('od najmanjeg do najveceg: ' + manjiPremaVecem)
+
+veciPremaManjim = niz.sort(function (a, b) {
+    return b - a;
+});
+console.log('od najveceg prema najmanjem: ' + veciPremaManjim)
 
 
 
