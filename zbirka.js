@@ -636,6 +636,49 @@ for (let i = 0; i < niz.length; i++) {
 
 console.log('najduza rijec je: ' + najduza + ' najkraca rijec je: ' + najkraca);
 
+// 42.
+var input,
+    temp,
+    niz = [],
+    parni = [],
+    neparni = [],
+    sumParni = 0,
+    sumNeparni = 0,
+    prosijecnaParnih,
+    prosijecnaNeparnig;
+
+for (var i = 0; i < 10; i++) {
+    input = parseInt(prompt('unesite 10 brojeva'));
+    niz.push(input);
+
+    if (niz[i] % 2 === 0) {
+        parni.push(niz[i]);
+    }
+    if (niz[i] % 2 !== 0) {
+        neparni.push(niz[i]);
+    }
+}
+for (let i = 0; i < parni.length; i++) {
+    sumParni += parni[i];
+}
+for (let i = 0; i < neparni.length; i++) {
+    sumNeparni += neparni[i];
+}
+
+console.log('parnih je: ' + parni.length + ' neparnih je:' + neparni.length);
+console.log('prosijek parnih je: ' + sumParni / parni.length)
+
+
+if (sumParni > sumNeparni) {
+    console.log('zbroj parnih je veci ')
+} else {
+    console.log('zbroj neparnih je veci ')
+}
+
+
+
+
+
 // todo Javascript 1
 
 // todo Javascript 2
