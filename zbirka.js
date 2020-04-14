@@ -1,4 +1,4 @@
-// todo Uvod u programiranje
+//  Uvod u programiranje
 // 1.
 var a, b, c, d;
 a = 20;
@@ -713,6 +713,26 @@ console.log('od najveceg prema najmanjem: ' + veciPremaManjim)
 
 
 
+
+
 // todo Javascript 1
+
+// 1.
+var broj1 = parseInt(prompt('unesite prvi broj')),
+    broj2 = parseInt(prompt('unesite prvi broj'));
+
+function oduzimanje(a, b) {
+    return a - b;
+}
+function zbrajanje(a, b) {
+    return a + b;
+}
+
+if (broj1 > broj2) {
+    console.log(oduzimanje(broj2, broj1));
+} else {
+    console.log(zbrajanje(broj1, broj2));
+}
+
 
 // todo Javascript 2
