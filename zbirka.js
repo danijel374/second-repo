@@ -607,7 +607,19 @@ for (let i = 0; i < niz1.length; i++) {
 niz2.sort(function (a, b) { return a - b });
 console.log(niz2);
 
+// 40.
 
+var niz1 = ['ovo', 'je', 'bas', 'pet', 'rijeci'],
+    niz2 = [];
+
+
+
+for (let i = 0; i < niz1.length; i++) {
+    if (niz1[i].length > 2) {
+        niz2.push(niz1[i]);
+    }
+}
+console.log('niz sa rijecima iz prvog niza koje imaju vise od 2 slova: ' + niz2);
 // todo Javascript 1
 
 // todo Javascript 2
