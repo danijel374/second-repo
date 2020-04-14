@@ -933,6 +933,35 @@ function brojiTID(unos) {
 
 console.log(brojiTID(input));
 
+// 10.
+
+var input = prompt('unesite recenicu');
+
+function mjenjaRecenicu(unos) {
+    var niz = unos.split(''),
+        result = [];
+
+    for (let i = niz.length - 1; i >= 0; i--) {
+        result.push(niz[i]);
+    }
+
+    for (let i = 0; i < result.length; i++) {
+        if (result[i] !== result[i].toLowerCase()) {
+            result[i] = result[i].toLowerCase();
+        } else {
+            result[i] = result[i].toUpperCase();
+        }
+
+    }
+
+    return result.join('');
+}
+
+
+
+console.log(mjenjaRecenicu(input));
+
+
 
 
 
