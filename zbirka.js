@@ -426,6 +426,17 @@ while (brojac <= 5) {
 }
 console.log(suma)
 
+// 28.
+var brojac = 0, input;
+
+while (brojac < Infinity) {
+    input = parseInt(prompt('unesite broj'));
+    brojac++;
+    if (input > 20) {
+        break;
+    }
+}
+console.log('pokusaj broj ' + brojac)
 // todo Javascript 1
 
 // todo Javascript 2
