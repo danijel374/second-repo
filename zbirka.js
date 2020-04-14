@@ -291,6 +291,49 @@ if (broj > 9 && broj < 100) {
     console.log('nije dvoznamenkast')
 }
 
+// 20.
+
+var text = prompt('unesite neki text');
+text = text.toLowerCase();
+var brojac = 0;
+for (var i = 0; i < text.length; i++) {
+    if (text[i] === 'a' || text[i] === 'e' || text[i] === 'i' || text[i] === 'o' || text[i] === 'u') {
+        brojac++;
+    }
+}
+for (let i = 0; i < 5; i++) {
+    console.log(text[i]);
+}
+console.log('broj samoglasnika je' + ' ' + brojac);
+
+// 21.
+var broj1 = parseInt(prompt('unesite prvi broj')),
+    broj2 = parseInt(prompt('unesite drugi broj')),
+    zbroj, razlika, umnozak, kolicnik, temp, sumapar = 0, sumanepar = 0;
+
+zbroj = broj1 + broj2;
+razlika = broj1 - broj2;
+umnozak = broj1 * broj2;
+kolicnik = broj1 / broj2;
+
+if (broj1 > broj2) {
+    temp = broj2;
+    broj2 = broj1;
+    broj1 = temp;
+}
+for (let i = broj1; i < broj2; i++) {
+    if (i % 2 === 0) {
+        sumapar += i;
+    }
+}
+for (let i = broj1; i < broj2; i++) {
+    if (i % 2 !== 0) {
+        sumanepar += i;
+    }
+}
+console.log('suma par je- ' + sumapar + 'suma nepar je- ' + sumanepar);
+
+
 
 // todo Javascript 1
 
