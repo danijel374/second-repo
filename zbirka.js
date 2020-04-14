@@ -959,6 +959,7 @@ function mjenjaRecenicu(unos) {
 
 console.log(mjenjaRecenicu(input));
 
+
 // 11. 
 var input = prompt('unesite neki tekst');
 
@@ -977,6 +978,17 @@ function palindrom(unos) {
 }
 
 console.log(palindrom(input));
+
+// 12.
+function metriICentrimetri(ucm) {
+    var metri = parseInt(ucm / 100),
+        centimetri = ucm % 100;
+
+    return (metri + 'm i ' + centimetri + 'cm')
+}
+
+console.log(metriICentrimetri(178));
+
 
 
 
