@@ -230,6 +230,23 @@ if (broj < 20) {
 } else {
     console.log(broj);
 }
+// 16.
+var broj = parseInt(prompt('unesite broj')),
+    suma = 0;
+
+if (broj % 2 === 0) {
+    for (let i = broj; i >= 1; i--) {
+        console.log(i)
+    }
+} else {
+    for (var j = 1; j < broj; j++) {
+        suma += j;
+    }
+
+    console.log(suma);
+
+}
+
 
 
 // todo Javascript 1
