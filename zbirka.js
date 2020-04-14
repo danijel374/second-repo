@@ -620,6 +620,22 @@ for (let i = 0; i < niz1.length; i++) {
     }
 }
 console.log('niz sa rijecima iz prvog niza koje imaju vise od 2 slova: ' + niz2);
+
+// 41. 
+var niz = ['ovaj', 'niz', 'je', 'pet', 'rijeci'],
+    najduza = niz[0],
+    najkraca = niz[0];
+
+for (let i = 0; i < niz.length; i++) {
+    if (niz[i].length > najduza.length) {
+        najduza = niz[i];
+    } else if (niz[i].length < najkraca.length) {
+        najkraca = niz[i];
+    }
+}
+
+console.log('najduza rijec je: ' + najduza + ' najkraca rijec je: ' + najkraca);
+
 // todo Javascript 1
 
 // todo Javascript 2
