@@ -416,6 +416,16 @@ for (var i = 6; i < j; i += 4) {
 }
 // 6,10,40,30
 
+// 27. 
+var input, brojac = 12, suma = 0;
+
+while (brojac <= 5) {
+    input = parseInt(prompt('unesite dvoznamenkast broj'));
+    suma += input % 10;
+    brojac++;
+}
+console.log(suma)
+
 // todo Javascript 1
 
 // todo Javascript 2
