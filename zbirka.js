@@ -462,6 +462,25 @@ while (brojac < Infinity) {
 console.log(brojac);
 
 // 31. 
+var brojacpoz = 0, brojacneg = 0, input,
+    xd = 1;
+
+
+while (xd < Infinity) {
+    input = parseInt(prompt('unesite broj'));
+    if (input > 0) {
+        brojacpoz++;
+    } else if (input < 0) {
+        brojacneg++;
+    }
+    if (input === 0) {
+        break;
+    }
+}
+console.log('uneseno pozitivnig- ' + brojacpoz + ' a negativnih- ' + brojacneg);
+
+// 32.
+
 // todo Javascript 1
 
 // todo Javascript 2
