@@ -866,6 +866,34 @@ function check(unesiniz) {
 
 check(niz);
 
+// 7. 
+
+var input = parseInt(prompt('unesite uplaceni iznos')),
+    izracunato;
+
+function izracunPoreza(unos) {
+    if (unos >= 100) {
+        if (unos < 500) {
+            unos *= 0.01;
+            return unos;
+        } else if (unos >= 500 && unos < 1000) {
+            unos *= 0.05;
+            return unos;
+        } else {
+            unos *= 0.1
+            return unos;
+        }
+    } else {
+        return 'unesite valjani iznos'
+    }
+}
+
+izracunato = izracunPoreza(input);
+
+console.log(izracunato);
+
+
+
 
 
 
