@@ -505,6 +505,19 @@ for (let i = 0; i < 10; i++) {
 }
 console.log(niz)
 
+// 34.
+var niz = [],
+    zbroj = 0,
+    input;
+
+do {
+    input = parseInt(prompt('unesite broj'));
+    niz.push(input);
+    zbroj += input;
+
+} while (zbroj < 50)
+console.log(niz.length);
+
 // todo Javascript 1
 
 // todo Javascript 2
