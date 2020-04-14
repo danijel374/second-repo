@@ -518,6 +518,32 @@ do {
 } while (zbroj < 50)
 console.log(niz.length);
 
+// 35.
+
+var text = "Hello world je najbolja udruga ikada";
+
+function disemvowel(str) {
+    var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+    return str.split('').filter(function (el) {
+        return vowels.indexOf(el.toLowerCase()) === -1;
+    }).join('');
+}
+var bezsamoglasnika = disemvowel(text);
+console.log('recenica bez samoglasnika je: ' + bezsamoglasnika);
+
+
+
+var niz = text.split('');
+for (let i = 0; i < niz.length; i++) {
+    if (niz[i] !== 'a' && niz[i] !== 'e' && niz[i] !== 'i' && niz[i] !== 'o' && niz[i] !== 'u') {
+        niz[i] = '';
+    }
+}
+text = niz.join('')
+console.log('recenica bez suglasnika je: ' + text)
+
+
 // todo Javascript 1
 
 // todo Javascript 2
