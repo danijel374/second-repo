@@ -957,9 +957,26 @@ function mjenjaRecenicu(unos) {
     return result.join('');
 }
 
-
-
 console.log(mjenjaRecenicu(input));
+
+// 11. 
+var input = prompt('unesite neki tekst');
+
+function palindrom(unos) {
+    unos = unos.toLowerCase();
+    var len = unos.length;
+    var mid = Math.floor(len / 2);
+
+    for (var i = 0; i < mid; i++) {
+        if (unos[i] !== unos[len - 1 - i]) {
+            return 'nije palindrom';
+        }
+    }
+
+    return 'palindrom je';
+}
+
+console.log(palindrom(input));
 
 
 
