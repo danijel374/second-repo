@@ -277,6 +277,19 @@ if (broj > 9 && broj < 100) {
     console.log('broj nije dvoznamenkast');
 }
 
+// 19.
+
+var broj = parseInt(prompt('unesite dvoznamenkasti broj'));
+
+if (broj > 9 && broj < 100) {
+    for (let i = 1; i <= 10; i++) {
+        if (broj % i === 0) {
+            console.log(i);
+        }
+    }
+} else {
+    console.log('nije dvoznamenkast')
+}
 
 
 // todo Javascript 1
