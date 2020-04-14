@@ -892,6 +892,28 @@ izracunato = izracunPoreza(input);
 
 console.log(izracunato);
 
+// 8.
+var input = parseInt(prompt('unesite broj prodanih ploca'));
+
+function vracamTirazu(unos) {
+    if (unos > 0 && unos < 100000) {
+        return 'ploca nije presla 100k'
+    }
+    else if (unos >= 100000 && unos <= 200000) {
+        return 'srebrena';
+    } else if (unos > 200000 && unos <= 500000) {
+        return 'zlatna';
+    } else if (unos > 500000) {
+        return 'platinasta';
+    }
+    else {
+        return 'unesite valjani unos'
+    }
+}
+
+console.log(vracamTirazu(input));
+
+
 
 
 
