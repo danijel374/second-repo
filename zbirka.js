@@ -590,6 +590,23 @@ for (let i = 0; i < niz1.length; i++) {
 niz2.sort(function (a, b) { return b - a });
 console.log(niz2);
 
+// 39.
+var niz1 = [], niz2 = [], input, zbroj = 0;
+
+do {
+    input = parseInt(prompt('unesite broj'));
+    niz1.push(input);
+    zbroj += input;
+} while (zbroj < 250);
+
+for (let i = 0; i < niz1.length; i++) {
+    if (niz1[i] % 2 === 0) {
+        niz2.push(niz1[i])
+    }
+}
+niz2.sort(function (a, b) { return a - b });
+console.log(niz2);
+
 
 // todo Javascript 1
 
