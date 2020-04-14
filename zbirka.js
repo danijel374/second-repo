@@ -480,6 +480,25 @@ while (xd < Infinity) {
 console.log('uneseno pozitivnig- ' + brojacpoz + ' a negativnih- ' + brojacneg);
 
 // 32.
+var broj1 = parseInt(prompt('unesite broj 1')),
+    broj2 = parseInt(prompt('unesite broj 2')),
+    temp, i = broj1;
+
+if (broj1 > broj2) {
+    temp = broj1;
+    broj1 = broj2;
+    broj2 = temp;
+}
+
+do {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+    i++
+} while (i < broj2);
+
+// 33.
+
 
 // todo Javascript 1
 
