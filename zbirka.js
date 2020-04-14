@@ -768,5 +768,25 @@ function kalkulator(prvi, drugi, operator) {
 
 console.log(kalkulator(broj1, broj2, operacija));
 
+// 3. 
+var odgovor = parseInt(prompt('koliko je 2+2?'));
+
+function provjera(unos) {
+    if (unos === 4) {
+        console.log('odogovor je tocan');
+        return true;
+    } else {
+        return 4;
+    }
+}
+
+if (provjera(odgovor) === 4) {
+    console.log('vas odgovor je netocan tocan odgovor glasi: 4')
+}
+
+
+provjera(odgovor);
+
+
 
 // todo Javascript 2
