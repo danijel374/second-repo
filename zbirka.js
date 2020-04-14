@@ -542,6 +542,38 @@ for (let i = 0; i < niz.length; i++) {
 }
 text = niz.join('')
 console.log('recenica bez suglasnika je: ' + text)
+// TODO 36. Zanima me npr ako imamo minus brojeve kako bi ovaj zadatak uradili 
+var niz = [87, 93, 11, 27, 38, 100, 42, 31, 8, 40],
+    min = niz[0],
+    max = niz[0];
+
+for (let i = 0; i < niz.length; i++) {
+    if (niz[i] < min) {
+        min = niz[i];
+    } else if (niz[i] > max) {
+        max = niz[i];
+    }
+}
+
+console.log('najblizi je: ' + min + ' a najudaljeniji je: ' + max);
+
+// 37. 
+var array = [15, 123, 678, 23, 797, 905, 769, 567, 67],
+    srednji, srednji2,
+    index = parseInt(array.length / 2);
+
+if (array.length % 2 !== 0) {
+    srednji = array[index];
+    console.log('prvi je: ' + array[0] + ' zadnji je: ' + array[array.length - 1] + ' srednji je: ' + srednji)
+} else {
+    srednji = array[index];
+    srednji2 = array[index - 1];
+    console.log('prvi je: ' + array[0] + ' zadnji je: ' + array[array.length - 1] + ' srednji su: ' + srednji + ' ' + srednji2)
+}
+
+
+
+
 
 
 // todo Javascript 1
