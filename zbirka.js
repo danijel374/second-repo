@@ -402,6 +402,20 @@ for (var i = 8; i < j; i += 2) {
 }
 // 8,10,12,50,40,30
 
+// 26. Što će se ispisati:
+var j = 60;
+for (var i = 6; i < j; i += 4) {
+    if (j % i !== 0) {
+        console.log(j);
+    }
+    else {
+        console.log(i
+        );
+    }
+    j -= 10;
+}
+// 6,10,40,30
+
 // todo Javascript 1
 
 // todo Javascript 2
