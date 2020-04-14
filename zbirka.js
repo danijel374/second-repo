@@ -842,6 +842,31 @@ function check_year(unos) {
 
 check_year(godina);
 
+// 6.
+
+var niz = [],
+    input;
+function praviNiz() {
+    for (let i = 1; i <= 5; i++) {
+        input = parseInt(prompt('unesite broj'));
+        niz.push(input);
+    }
+    console.log('napravio sam niz: ' + niz);
+}
+praviNiz();
+
+function check(unesiniz) {
+    for (let i = 0; i < unesiniz.length; i++) {
+        if (unesiniz[i] % 2 === 0 && unesiniz[i] < 0) {
+            unesiniz[i] *= unesiniz[i]
+        }
+    }
+    console.log(unesiniz);
+}
+
+check(niz);
+
+
 
 
 // todo Javascript 2
