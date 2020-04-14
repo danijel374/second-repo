@@ -449,7 +449,19 @@ console.log(niz[3]);
 console.log('zbroj prvog i petog je: ' + (niz[0] + niz[4]));
 
 // 30.
+var zbroj = 0, brojac = 1;
 
+while (brojac < Infinity) {
+    zbroj += parseInt(prompt('unesite broj'));
+    if (zbroj >= 100) {
+        break;
+    }
+    brojac++;
+}
+
+console.log(brojac);
+
+// 31. 
 // todo Javascript 1
 
 // todo Javascript 2
