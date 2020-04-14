@@ -306,7 +306,21 @@ for (let i = 0; i < 5; i++) {
 }
 console.log('broj samoglasnika je' + ' ' + brojac);
 
-// 21.
+//21.
+var text = prompt('unesite neki text');
+text = text.toLowerCase();
+var brojac = 0;
+for (var i = 0; i < text.length; i++) {
+    if (text[i] !== 'a' && text[i] !== 'e' && text[i] !== 'i' && text[i] !== 'o' && text[i] !== 'u' && text[i].charCodeAt() >= 97 && text[i].charCodeAt() <= 122) {
+        brojac++;
+    }
+}
+for (let i = 0; i < 3; i++) {
+    console.log(text[i]);
+}
+console.log('broj suglasnika je' + ' ' + brojac);
+
+// 22.
 var broj1 = parseInt(prompt('unesite prvi broj')),
     broj2 = parseInt(prompt('unesite drugi broj')),
     zbroj, razlika, umnozak, kolicnik, temp, sumapar = 0, sumanepar = 0;
@@ -332,6 +346,29 @@ for (let i = broj1; i < broj2; i++) {
     }
 }
 console.log('suma par je- ' + sumapar + 'suma nepar je- ' + sumanepar);
+
+// 23. Što će se ispisati:
+var a = 3, b = 18, c = '6';
+for (var i = a; i < b; i += 3) {
+
+    if (i == c) {
+        console.log(i + " = " + c);
+    }
+    if (b % i !== 0) {
+        console.log(i - 1
+        );
+    }
+    else {
+        console.log(i);
+    }
+}
+// ISPIS:
+/* 3
+6 = 6
+6
+9
+11
+14 */
 
 
 
