@@ -828,6 +828,20 @@ function daniUMjesecu(mjesec) {
 var dani = daniUMjesecu(mjesec);
 console.log(dani);
 
+// 5.
+
+var godina = parseInt(prompt('unesite godinu'));
+
+function check_year(unos) {
+    if ((unos % 4 === 0 && unos % 100 !== 0) || unos % 400 === 0) {
+        console.log('godina je prijestupna');
+    } else {
+        console.log('godina nije prijestupna');
+    }
+}
+
+check_year(godina);
+
 
 
 // todo Javascript 2
