@@ -1040,6 +1040,22 @@ for (var prop in ob) {
     console.log(prop + ' - ' + ob[prop]);
 }
 
+// 16.
+
+var zgrada = {
+    adresa: '',
+    brojZgrade: '',
+    brojKatova: '',
+    brojStanova: ''
+}
+
+zgrada.adresa = prompt('unesite adresu');
+zgrada.brojZgrade = prompt('unesite broj zgrade');
+zgrada.brojKatova = prompt('unesite broj katova');
+zgrada.brojStanova = prompt('unesite broj stanova');
+
+console.log('zivim u zgradi broj: ' + zgrada.brojZgrade + ' na adresi: ' + zgrada.adresa + ' koja ima ' + zgrada.brojKatova + ' katova i ukupno ' + zgrada.brojStanova + ' stanova')
+
 
 
 
