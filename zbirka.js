@@ -1028,6 +1028,17 @@ function imeIBrojKoseva(ime, brojKoseva) {
 
 imeIBrojKoseva('danijel', 39292)
 
+// 15. 
+
+var ob = {
+    naziv: 'The Wire',
+    ocjena: 9.4,
+    autor: 'David Simon'
+};
+
+for (var prop in ob) {
+    console.log(prop + ' - ' + ob[prop]);
+}
 
 
 
