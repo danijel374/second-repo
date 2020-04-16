@@ -1002,6 +1002,32 @@ function convertToSeconds(unos) {
 
 console.log(convertToSeconds(sati));
 
+// 14.
+
+function top5(brojKoseva) {
+
+    if (brojKoseva > 31419 && brojKoseva < 32292) {
+        return 5;
+    } else if (brojKoseva >= 32292 && brojKoseva < 32482) {
+        return 4;
+    } else if (brojKoseva >= 32482 && brojKoseva < 36928) {
+        return 3;
+    } else if (brojKoseva >= 36928 && brojKoseva < 38387) {
+        return 2;
+    } else if (brojKoseva >= 38387) {
+        return 1;
+    } else {
+        return 'nije u top 5 strijelaca NBA lige';
+    }
+}
+
+function imeIBrojKoseva(ime, brojKoseva) {
+    console.log(ime + ': broj koseva u karijeri je: ' + brojKoseva);
+    console.log('igrac je medu top 5 strijelaca NBA lige,tocnije na poziciji ' + top5(brojKoseva));
+}
+
+imeIBrojKoseva('danijel', 39292)
+
 
 
 
