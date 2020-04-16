@@ -1056,6 +1056,17 @@ zgrada.brojStanova = prompt('unesite broj stanova');
 
 console.log('zivim u zgradi broj: ' + zgrada.brojZgrade + ' na adresi: ' + zgrada.adresa + ' koja ima ' + zgrada.brojKatova + ' katova i ukupno ' + zgrada.brojStanova + ' stanova')
 
+// 17. 
+var test = {
+    ostvareni_bodovi: 80,
+    max_bodovi: 100,
+    ocjena: '',
+    racunajOcjenu() {
+        this.ocjena = Math.round((this.ostvareni_bodovi * 5) / this.max_bodovi);
+    }
+}
+test.racunajOcjenu();
+console.log(test.ocjena);
 
 
 
