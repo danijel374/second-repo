@@ -1115,6 +1115,29 @@ if (regExLetters.test(unosIme) && regExLetters.test(unosGradonacelnik)
     console.log('unesi podatke u ispravnom formatu');
 }
 
+// 20.
+var time = {
+    hours: 1,
+    minutes: 1,
+    seconds: 30,
+    convertHours() {
+        return this.hours * 60
+    },
+    convertMinutes() {
+        return (this.convertHours() + this.minutes) * 60;
+    },
+    convertSeconds() {
+        return this.convertMinutes() + this.seconds;
+    },
+    print() {
+        console.log(this.hours + ':' + this.minutes + ':' + this.seconds)
+    }
+}
+
+console.log(time.convertHours());
+console.log(time.convertMinutes());
+console.log(time.convertSeconds());
+
 
 
 
