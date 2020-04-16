@@ -1068,6 +1068,27 @@ var test = {
 test.racunajOcjenu();
 console.log(test.ocjena);
 
+// 18. 
+// ! Kako ispisati properties a izostaviti metode
+var osoba = {
+    ime: 'john',
+    prezime: 'doe',
+    kilogrami: 80,
+
+}
+for (var prop in osoba) {
+    console.log(prop + ' - ' + osoba[prop]);
+}
+
+osoba.racuna = function () {
+    this.kilogrami = this.kilogrami * 0.38;
+}
+
+osoba.racuna();
+console.log('nakon izracuna tezine: ')
+for (var prop in osoba) {
+    console.log(prop + ' - ' + osoba[prop])
+}
 
 
 
