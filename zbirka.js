@@ -989,6 +989,20 @@ function metriICentrimetri(ucm) {
 
 console.log(metriICentrimetri(178));
 
+// 13.
+
+var sati = parseInt(prompt('unesite sate'));
+
+function convertToSeconds(unos) {
+    function convertToMinutes(a) {
+        return a * 60;
+    }
+    return (convertToMinutes(unos) * 60);
+}
+
+console.log(convertToSeconds(sati));
+
+
 
 
 
