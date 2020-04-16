@@ -1090,6 +1090,32 @@ for (var prop in osoba) {
     console.log(prop + ' - ' + osoba[prop])
 }
 
+// 19.
+
+
+let grad = {
+}
+
+let unosIme = prompt('unesi ime grada');
+let unosGradonacelnik = prompt('unesi granonacelnika');
+let unosStanovnici = parseInt(prompt('unesi broj stanovnika'));
+let unosPovrsina = parseInt(prompt('unesi povrsinu grada'));
+
+let regExLetters = /^[A-z]+$/;
+let regExNumbers = /^[0-9]+$/;
+
+if (regExLetters.test(unosIme) && regExLetters.test(unosGradonacelnik)
+    && regExNumbers.test(unosStanovnici) && regExNumbers.test(unosPovrsina)) {
+    grad.ime = unosIme;
+    grad.gradonacelnik = unosGradonacelnik;
+    grad.brojStanovnika = unosStanovnici;
+    grad.povrsina = unosPovrsina + ' km2';
+    console.log(grad);
+} else {
+    console.log('unesi podatke u ispravnom formatu');
+}
+
+
 
 
 
