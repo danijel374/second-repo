@@ -1161,6 +1161,41 @@ let objekt = {
     
     objekt.staz(objekt.povecaj);
     console.log(objekt.placa);
+
+    // 22.
+    const osoba = {},
+imeUnos = prompt('unesite ime'),
+prezimeUnos = prompt('unesite prezime');
+provjera(imeUnos,prezimeUnos);
+const jmbgUnos = prompt('unesite jmbg'); 
+provjeraJMBG(jmbgUnos);
+
+
+function provjera(ime,prezime){
+const regExImeIPrezime = /(\D){3,}/i;
+if(regExImeIPrezime.test(imeUnos) && regExImeIPrezime.test(prezimeUnos)){
+osoba.ime = imeUnos;
+osoba.prezime = prezimeUnos;
+return 1;
+}else{
+console.log('Pogresan unos imena ili prezimena');
+return 0;
+}
+}
+ function provjeraJMBG(jmbg){
+const regJMBG = /^\d{13}$/
+if(regJMBG.test(jmbgUnos)){
+osoba.jmbg = jmbgUnos;
+return 1;
+}else{
+console.log('Pogresan unos JMBG-a');
+return 0;
+}
+} 
+
+
+console.log(osoba)
+
     
 
 
