@@ -1245,6 +1245,26 @@ const objekt = {
         arr.push(element.naziv);
         }));
         console.log(arr.sort().join(' -- '))
+
+     // 25.
+
+     const arrKnjige =[];
+     const arrAutori = [];
+     knjige.lektira.forEach(function(element){
+     if(element.br_str > 300){
+     arrKnjige.push(element.naziv);
+     }
+     arrAutori.push(element.autor);
+     })
+     console.log(`Knjige koje imaju preko 300str. su: ${arrKnjige.join(', ')}`)
+         let results = [];
+     for (let i = 0; i < arrAutori.length - 1; i++) {
+    if (arrAutori[i] === arrAutori[i + 1]) {
+     results.push(arrAutori[i]);
+     }
+       }
+       const uniqueAges = [...new Set(results)]
+       console.log(uniqueAges.join(' - '));
     
 
 
