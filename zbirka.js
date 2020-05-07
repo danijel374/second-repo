@@ -1196,6 +1196,22 @@ return 0;
 
 console.log(osoba)
 
+// 23.
+const objekt = {
+    R: 0,
+    G: 0,
+    B: 0,
+    postavi_boju: function(){
+    this.R = Math.floor(Math.random() * 255);
+    this.G = Math.floor(Math.random() * 255); 
+    this.B = Math.floor(Math.random() * 255); 
+    }
+    }
+    objekt.postavi_boju();
+    console.log(`${objekt.R},${objekt.G},${objekt.B}`)
+
+    // 24.
+
     
 
 
