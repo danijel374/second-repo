@@ -1266,6 +1266,46 @@ const objekt = {
        const uniqueAges = [...new Set(results)]
        console.log(uniqueAges.join(' - '));
     
+    // 26. 
+    var knjige = {
+        lektira : [{
+        naziv : "Zločin i kazna",
+        autor : "Fjodor Mihajlovič Dostojevskog",
+        br_str : 350,
+        godina_izdavanja : 1866
+        }, {
+        naziv : "Vlak u snijegu",
+        autor : "Mato Lovrak",
+        br_str : 150,
+        godina_izdavanja : 1931
+        },{
+        naziv : "Mali princ",
+        autor : " Antoine de Saint-Exupery",
+        br_str : 120,
+        godina_izdavanja : 1943
+        },{
+        naziv : "Rat i mir",
+        autor : "Lav Nikolajevič Tolstoj",
+        br_str : 300,
+        godina_izdavanja : 1865
+        },{
+        naziv : "Ana Karenjina",
+        autor : "Lav Nikolajevič Tolstoj",
+        br_str : 800,
+        godina_izdavanja : 1873
+        },
+        {
+        naziv : "The Last Wish",
+        autor : "Andrzej Sapkowski",
+        br_str : 288,
+        godina_izdavanja : 1993
+        }]
+        };
+         let arr = [];
+        console.log(knjige.lektira.forEach(function(element){
+        arr.push(element.naziv);
+        }));
+        console.log(arr.sort().join(' -- '))
 
 
 
