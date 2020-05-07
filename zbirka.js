@@ -1139,7 +1139,29 @@ console.log(time.convertMinutes());
 console.log(time.convertSeconds());
 
 
-
+// 21.
+let objekt = {
+    ime: 'marko',
+    prezime: 'matic',
+    zanimanje: 'webdev',
+    godinaPocetkaRada: 2018,
+    get godinaStaza(){ 
+      return (new Date().getFullYear() - this.godinaPocetkaRada);
+    },
+    placa: 1500,
+    povecaj: function(){
+    for(let i = 1 ; i <= objekt.godinaStaza; i++){
+    objekt.placa += 50;
+    }
+    },
+    staz: function(callback){
+    callback();
+    }
+    }
+    
+    objekt.staz(objekt.povecaj);
+    console.log(objekt.placa);
+    
 
 
 
