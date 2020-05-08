@@ -1307,7 +1307,40 @@ const objekt = {
         }));
         console.log(arr.sort().join(' -- '))
 
+        // 27.
 
+        var phonebook = {
+            contact1 : {
+            firstName: "Ana",
+            lastName: "Anic",
+            phoneNumber: "063/111-111",
+            address: ['Ante Starcevica','9','Mostar','88000']
+            },
+            contact2 : {
+            firstName: "Ante",
+            lastName: "Antic",
+            phoneNumber: "063/222-111",
+            address: ['Hrvatske mladeži','7','Mostar','88000']
+            },
+            contact3 : {
+            firstName: "Marko",
+            lastName: "Markic",
+            phoneNumber: "063/222-333",
+            address: ['Kraljice Katarine','10','Grude','88340']
+            },
+            contact4 : {
+            firstName: "Hrvoje",
+            lastName: "Horvat",
+            phoneNumber: "098/2522-111",
+            address: ['Jarunskaulica','12','Zagreb','10000']
+            }
+            };
+            
+            for(let i in phonebook){
+              console.log(phonebook[i].firstName + ' ' + phonebook[i].lastName + ' - ' + phonebook[i].address  );
+            }
+            
+            
 
 
 
