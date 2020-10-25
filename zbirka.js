@@ -1635,23 +1635,81 @@ var phonebook = {
 
 // Ispisati za svaki kontakt njegovo ime, broj i grad stanovanja.
 
-for (let i in phonebook) {
-	console.log(phonebook[i].firstName + ' ' + phonebook[i].lastName + ' - ' + phonebook[i].address);
+function print(phonebook) {
+	let phoneArr = Object.keys(phonebook).map(function (key) {
+		return phonebook[key];
+	});
+
+	for (let i = 0; i < phoneArr.length; i++) {
+		if (typeof phoneArr[i] !== 'function') {
+			console.log('Name: ' + phoneArr[i].firstName + ' ' + phoneArr[i].lastName);
+			console.log('Number: ' + phoneArr[i].phoneNumber);
+			console.log('City: ' + phoneArr[i].address[2]);
+		}
+	}
 }
+print(phonebook);
 
 // 28.
 // Dodati metodu „search“ koja prima ime kontakta i vraća sve podatke traženog kontakta ili
 // 0 ako nije pronađen. U glavnom programu zatražiti od korisnika unos imena kontakta,
 // pozvati metodu te ispisati podatke nađenog kontakta ili odgovarajuću poruku.
+// TODO idk atm
+phonebook.search = function (name) {
+	var name = prompt('Enter name for search: ');
+	var contacts = [];
+	Object.keys(phonebook).forEach(function (contact) {
+		if (typeof phonebook[contact] !== 'function') {
+			if (phonebook[contact].firstName.toLowerCase() === name.toLowerCase()) {
+				contacts.push(phonebook[contact]);
+			}
+		}
+	});
 
+	if (contacts.length > 0) {
+		console.log(contacts);
+		// TODO hmmm
+		console.log(`kontankt pronaden ${contacts}`);
+	} else {
+		console.log(`kontankt nije pronaden`);
+	}
+};
 // 29.
 // Napisati funkciju „addNewContact()“ za dodavanje novog, petog kontakta u imenik koja
 // od korisnika traži unos podataka (ime, prezime, broj telefona i adresu - ulica, broj ulice,
 // grad i poštanski broj grada). Pozvati funkciju i dodati novi kontakt.
 
+function addNewContact() {
+	let contact = {};
+	contact.firstName = prompt('Enter first name:');
+	contact.lastName = prompt('Enter last name:');
+	contact.phoneNumber = prompt('Enter phone number in format xxx/xxx-xxx:');
+	contact.address = [];
+	contact.address.push(prompt('Enter street name:'));
+	contact.address.push(prompt('Enter street number:'));
+	contact.address.push(prompt('Enter city:'));
+	contact.address.push(prompt('Enter post code:'));
+	phonebook['contact5'] = contact;
+}
+
 // 30.
 // Napisati funkciju „deleteContact() “ koja prima ime kontakta i briše ga iz imenika.
 // Zatražiti od korisnika unos imena korisnika kojega želi ukloniti zatim to i učiniti.
+
+function deleteContact(ime) {
+	for (kontakt in phonebook) {
+		if (typeof phonebook[kontakt] !== 'function') {
+			if (ime.toLowerCase() === phonebook[kontakt].firstName.toLowerCase()) {
+				delete phonebook[kontakt];
+			}
+		}
+	}
+}
+
+let imeZaIzbrisat = prompt('Unesite koje ime zelite izbrisat');
+
+deleteContact(imeZaIzbrisat);
+console.log(phonebook);
 
 // 31.
 // Deklarirati objekt Film koji će imati svojstva naziv, žanr i trajanje, te metodu koja će
@@ -1796,35 +1854,35 @@ for (let i in phonebook) {
 
 var json = {
 	products: {
-		'76': {
+		76: {
 			id: '76',
 			name: 'Kruh',
 			price: 'KM 1.65',
 			qty: '4',
 			ingredients: ['sol', 'brasno', 'voda', 'kvasac']
 		},
-		'14': {
+		14: {
 			id: '14',
 			name: 'Mlijeko',
 			price: 'KM 1.43',
 			qty: '12',
 			ingredients: ['kravlje mlijeko']
 		},
-		'48': {
+		48: {
 			id: '48',
 			name: 'Secer',
 			price: 'KM 2.64',
 			qty: '1',
 			ingredients: ['secerna trska']
 		},
-		'89': {
+		89: {
 			id: '89',
 			name: 'Brasno5kg',
 			price: 'KM 6.90',
 			qty: '1',
 			ingredients: ['psenica', 'sjemenke']
 		},
-		'5': {
+		5: {
 			id: '5',
 			name: 'Argeta',
 			price: 'KM 1.33',
