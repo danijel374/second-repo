@@ -1733,6 +1733,17 @@ setTimeout(film.print(), film.trajanje * 1000);
 // 32.
 // Što će se ispisati i zašto ?
 
+var niz = [];
+function t1(callback) {
+	setTimeout(callback, 1000);
+}
+t1(function () {
+	niz.push(2);
+	niz.push(5);
+});
+console.log(niz);
+// ! Kako kad nekad callback stigle upisat za 1000 milisekundi nekad ne
+
 // 33.
 // Deklarirati dvije funkcije. Prvoj funkciji proslijediti drugu kao callback parametar. U
 // prvoj funkciji deklarirati objekt „osoba“ i nakon 2 sekunde pozvati drugu funkciju. U
