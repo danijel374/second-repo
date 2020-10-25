@@ -1716,6 +1716,20 @@ console.log(phonebook);
 // ispisivati "Film 'naziv filma' je završio u 'vrijeme zavrsetka'.". Metodu pozvati kad završi
 // trajanje filma. (setTimeout()).
 
+let film = {
+	naziv: 'Avengers:Age of Ultron',
+	zanr: 'action',
+	trajanje: 141,
+	print: function () {
+		var today = new Date(),
+			h = today.getHours(),
+			m = today.getMinutes(),
+			s = today.getSeconds();
+		console.log('Film ' + this.naziv + ' je zavrsio u ' + h + ':' + m + ':' + s);
+	}
+};
+setTimeout(film.print(), film.trajanje * 1000);
+
 // 32.
 // Što će se ispisati i zašto ?
 
