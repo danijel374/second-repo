@@ -1823,6 +1823,18 @@ setTimeout(osoba.nahrani.bind(osoba), 8000);
 // da unese broj godina. Sve rezultate funkcija vratiti i ispisati u glavnom programu preko
 // console.log: ime + '', vi imate'' + godine + '' godina.''
 
+const funkcija1 = (callback) => {
+	const ime = prompt('unesi ime');
+	console.log(`Ime ${ime} vi imate ${callback()} godina`);
+};
+
+const funkcija2 = () => {
+	const brojGodina = prompt('unesite broj godina');
+	return brojGodina;
+};
+
+funkcija1(funkcija2);
+
 // 36.
 // Deklarirati objekt „stol“ koji će imati svojstva visina, širina, broj_rezerviranih_stolova.
 // Objekt treba imati i metodu „rezerviraj_stol“ koja će omogućiti rezervaciju stola
