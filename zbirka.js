@@ -1,4 +1,4 @@
-//  Uvod u programiranje
+// * Uvod u programiranje
 
 // 1.
 // Deklarirati 4 varijable, dodijeliti im proizvoljne numeričke vrijednosti. Pomoću
@@ -19,7 +19,7 @@ console.log(b / d);
 var a = 4,
 	b = 44,
 	c = 24,
-	d = "44";
+	d = '44';
 console.log(a > c);
 console.log(a > b || b > c);
 console.log(a < b && a < c);
@@ -33,9 +33,9 @@ console.log(b === d);
 // koji je od njih najveći pa ga pomnožite sa samim sobom te nakon toga ispišite njihov
 // zbroj.
 
-var broj1 = parseInt(prompt("unesite broj1")),
-	broj2 = parseInt(prompt("unesite broj2")),
-	broj3 = parseInt(prompt("unesite broj3"));
+var broj1 = parseInt(prompt('unesite broj1')),
+	broj2 = parseInt(prompt('unesite broj2')),
+	broj3 = parseInt(prompt('unesite broj3'));
 
 if (broj1 > 10 && broj2 > 10 && broj3 > 10) {
 	console.log(broj1 + broj2 + broj3);
@@ -56,26 +56,26 @@ if (broj1 > 10 && broj2 > 10 && broj3 > 10) {
 
 var a = 12,
 	b = 13,
-	c = "12",
-	d = "13";
+	c = '12',
+	d = '13';
 if (a < b) {
 	if (b < d) {
-		console.log("log 1");
+		console.log('log 1');
 	} else {
 		if (a < d) {
-			console.log("log 2");
+			console.log('log 2');
 		} else {
-			console.log("log 3");
+			console.log('log 3');
 		}
 	}
 } else {
 	if (c > a) {
-		console.log("log 4");
+		console.log('log 4');
 	} else {
 		if (b > c) {
-			console.log("log 5");
+			console.log('log 5');
 		} else {
-			console.log("log 6");
+			console.log('log 6');
 		}
 	}
 }
@@ -92,15 +92,15 @@ if (a < b) {
 // 2016)
 // - u tom slučaju ispisati odgovarajuću poruku.
 
-var godProizvodnje = parseInt(prompt("unesite godinu proizvodnje"));
+var godProizvodnje = parseInt(prompt('unesite godinu proizvodnje'));
 if (godProizvodnje > 1000 && godProizvodnje < 2020) {
 	if (new Date().getFullYear() - godProizvodnje > 30) {
-		console.log("oldtimer");
+		console.log('oldtimer');
 	} else if (new Date().getFullYear() - godProizvodnje < 5) {
-		console.log("newbie");
+		console.log('newbie');
 	}
 } else {
-	console.log("pogresa unos");
+	console.log('pogresa unos');
 }
 
 // 7.
@@ -109,9 +109,9 @@ if (godProizvodnje > 1000 && godProizvodnje < 2020) {
 // 30, ispišite: Ime + prezime + '', mladi ste!''. Ukoliko je korisnik između 30 i 45, ispišite:
 // Ime + prezime + '', u najboljim ste godinama! ''. Starije osobe nemojte komentirati.
 
-var ime = prompt("unesite ime"),
-	prezime = prompt("unesite prezime"),
-	godine = parseInt(prompt("unesite koliko godina imate"));
+var ime = prompt('unesite ime'),
+	prezime = prompt('unesite prezime'),
+	godine = parseInt(prompt('unesite koliko godina imate'));
 if (godine > 0 && godine <= 45) {
 	if (godine < 20) {
 		console.log(`${ime} ${prezime} veoma ste mladi`);
@@ -128,27 +128,27 @@ if (godine > 0 && godine <= 45) {
 // imena, ako postoje, ispišite njihovo ime te zbroj godina. Ukoliko nijedno nije
 // zadovoljeno, ispišite da nema imenjaka ni vršnjaka!
 
-var ime = prompt("unesite ime"),
-	godine = parseInt(prompt("unesite broj godina")),
-	ime2 = prompt("unesite ime"),
-	godine2 = parseInt(prompt("unesite broj godina")),
-	ime3 = prompt("unesite ime"),
-	godine3 = parseInt(prompt("unesite broj godina"));
+var ime = prompt('unesite ime'),
+	godine = parseInt(prompt('unesite broj godina')),
+	ime2 = prompt('unesite ime'),
+	godine2 = parseInt(prompt('unesite broj godina')),
+	ime3 = prompt('unesite ime'),
+	godine3 = parseInt(prompt('unesite broj godina'));
 
 if (godine === godine2) {
-	console.log(ime + " " + ime2);
+	console.log(ime + ' ' + ime2);
 } else if (godine === godine3) {
-	console.log(ime + " " + ime3);
+	console.log(ime + ' ' + ime3);
 } else if (godine2 === godine3) {
-	console.log(ime2 + " " + ime3);
+	console.log(ime2 + ' ' + ime3);
 } else if (ime === ime2) {
-	console.log(ime + " " + ime2 + (godine + godine2));
+	console.log(ime + ' ' + ime2 + (godine + godine2));
 } else if (ime === ime3) {
-	console.log(ime + " " + ime3 + (godine + godine3));
+	console.log(ime + ' ' + ime3 + (godine + godine3));
 } else if (ime2 === ime3) {
-	console.log(ime2 + " " + ime3 + (godine + godine3));
+	console.log(ime2 + ' ' + ime3 + (godine + godine3));
 } else {
-	console.log("nema imenjaka ni vrsnjaka");
+	console.log('nema imenjaka ni vrsnjaka');
 }
 
 // 9.
@@ -157,23 +157,23 @@ if (godine === godine2) {
 // manji od 2.5, ispišite ''Dovoljan 2'', za prosjek između 2.5 i 3.5 ispišite ''Dobar 3'', za
 // prosjek između 3.5 i 4.5 ispišite ''Vrlo dobar 4'', za prosjek iznad 4.5 ispišite ''Odličan 5''.
 
-var a = parseInt(prompt("unesite prvu ocjenu")),
-	b = parseInt(prompt("unesite drugu ocjenu")),
-	c = parseInt(prompt("unesite trecu ocjenu")),
+var a = parseInt(prompt('unesite prvu ocjenu')),
+	b = parseInt(prompt('unesite drugu ocjenu')),
+	c = parseInt(prompt('unesite trecu ocjenu')),
 	prosijek;
 
 if (a === 1 || b === 1 || c === 1) {
-	console.log("niste zadovoljili");
+	console.log('niste zadovoljili');
 } else {
 	prosijek = (a + b + c) / 3;
 	if (prosijek < 2.5) {
-		console.log("dovoljan 2");
+		console.log('dovoljan 2');
 	} else if (prosijek > 2.5 && prosijek < 3.5) {
-		console.log("dobar 3");
+		console.log('dobar 3');
 	} else if (prosijek > 3.5 && prosijek < 4.5) {
-		console.log("vrlodobar");
+		console.log('vrlodobar');
 	} else {
-		console.log("odlican");
+		console.log('odlican');
 	}
 }
 
@@ -182,17 +182,17 @@ if (a === 1 || b === 1 || c === 1) {
 // odgovor negativan, ispišite ''Hrabri ste!!'', u suprotnom, ispišite ''I ja!!''. Za ostale
 // odgovore ispisati da je unos nepravilan. Ovaj zadatak riješiti preko switch-case-a.
 
-var pitanje = prompt("bojite li se zubara");
+var pitanje = prompt('bojite li se zubara');
 
 switch (pitanje) {
-	case "ne":
-		console.log("hrabri ste");
+	case 'ne':
+		console.log('hrabri ste');
 		break;
-	case "da":
-		console.log("i ja sam");
+	case 'da':
+		console.log('i ja sam');
 		break;
 	default:
-		console.log("nepravilan unos");
+		console.log('nepravilan unos');
 }
 
 // 11.
@@ -201,7 +201,7 @@ switch (pitanje) {
 // broj, ukoliko nije, ispišite da broj nije višekratnik broja 5. Za sve druge brojeve koji nisu
 // između 0 i 20 ispišite da je unesen pogrešan broj
 
-var broj = parseInt(prompt("unesite broj manji od 25"));
+var broj = parseInt(prompt('unesite broj manji od 25'));
 if (broj > 0 && broj <= 20) {
 	switch (broj) {
 		case 5:
@@ -217,52 +217,52 @@ if (broj > 0 && broj <= 20) {
 			console.log(broj);
 			break;
 		default:
-			console.log("broj nije visekratnik broja 5");
+			console.log('broj nije visekratnik broja 5');
 	}
 } else {
-	console.log("pogersan unos");
+	console.log('pogersan unos');
 }
 //12.
 // Ako je unesen dan u tjednu, pomoću switch case-a ispišite: ako je ponedeljak, utorak
 // srijeda ili četvrtak “Kada će više vikend”, za petak “It's Friday, Friday. Gotta get down on
 // Friday”, ako je subota ili nedelja “Jej, vikend je!”. Ako je uneseno nešto drugo, ispišite “Pogrešan unos”.
 
-var dan = prompt("unesite dan");
+var dan = prompt('unesite dan');
 
 switch (dan) {
-	case "ponedjeljak":
-		console.log("kada ce vise vikend");
+	case 'ponedjeljak':
+		console.log('kada ce vise vikend');
 		break;
-	case "utorak":
-		console.log("kada ce vise vikend");
+	case 'utorak':
+		console.log('kada ce vise vikend');
 		break;
-	case "srijeda":
-		console.log("kada ce vise vikend");
+	case 'srijeda':
+		console.log('kada ce vise vikend');
 		break;
-	case "cetvrtak":
-		console.log("kada ce vise vikend");
+	case 'cetvrtak':
+		console.log('kada ce vise vikend');
 		break;
-	case "petak":
-		console.log("Its Friday,firaday gotta get down on firday");
+	case 'petak':
+		console.log('Its Friday,firaday gotta get down on firday');
 		break;
-	case "subota":
-		console.log("vikend je");
+	case 'subota':
+		console.log('vikend je');
 		break;
-	case "nedjelja":
-		console.log("vikend je");
+	case 'nedjelja':
+		console.log('vikend je');
 		break;
 	default:
-		console.log("pogresan unos");
+		console.log('pogresan unos');
 }
 
 // 13.
 // Zatražiti od korisnika da unese neki tekst. Izračunati koliko riječi ima unutar unesenog teksta.
 
-var text = prompt("unesite nekoliko rijeci");
+var text = prompt('unesite nekoliko rijeci');
 
 var brojac = 1;
 for (var i = 0; i < text.length; i++) {
-	if (text[i] == " ") {
+	if (text[i] == ' ') {
 		brojac++;
 	}
 }
@@ -272,7 +272,7 @@ console.log(brojac);
 // Unijeti cijeli broj preko prompt funkcije. Nakon toga preko for petlje zbrojiti sve brojeve
 // od 1 do unesenog broja, te ispisati rezultat.
 
-var broj = parseInt(prompt("Unesite broj"));
+var broj = parseInt(prompt('Unesite broj'));
 var suma = 0;
 for (var i = 1; i < broj; i++) {
 	suma += i;
@@ -283,7 +283,7 @@ console.log(suma);
 // Zatražiti od korisnika da unose broj manji od 20. Zatim ispisati sve brojeve od unesenog
 // broja do 1. Ako je unio veći broj, ispisati uneseni broj.
 
-var broj = parseInt(prompt("unesite broj manji od 20"));
+var broj = parseInt(prompt('unesite broj manji od 20'));
 
 if (broj < 20) {
 	for (let i = broj; i >= 1; i--) {
@@ -296,7 +296,7 @@ if (broj < 20) {
 // Zatražiti od korisnika da unese broj. Ukoliko je paran, ispisati sve brojeve unatrag od
 // unesenog do 1, u suprotnom, zbrojiti sve brojeve od 1 do unesenog broja.
 
-var broj = parseInt(prompt("unesite broj")),
+var broj = parseInt(prompt('unesite broj')),
 	suma = 0;
 
 if (broj % 2 === 0) {
@@ -314,8 +314,8 @@ if (broj % 2 === 0) {
 //  17.
 // Učitati dva broja, zatim ispisati svaki drugi broj između njih koji je djeljiv sa 2 i 3.
 
-var broj1 = parseInt(prompt("unesite prvi broj")),
-	broj2 = parseInt(prompt("unesite drugi broj")),
+var broj1 = parseInt(prompt('unesite prvi broj')),
+	broj2 = parseInt(prompt('unesite drugi broj')),
 	temp;
 if (broj1 > broj2) {
 	temp = broj2;
@@ -333,7 +333,7 @@ for (let i = broj1; i < broj2; i++) {
 // Zatražiti unos dvoznamenkastog broja. Ispisati sve njegove djelitelje. Ako nije
 // dvoznamenkast, samo treba ispisati odgovarajuću poruku.
 
-var broj = parseInt(prompt("unesite dvoznamenkasti broj"));
+var broj = parseInt(prompt('unesite dvoznamenkasti broj'));
 
 if (broj > 9 && broj < 100) {
 	for (let i = 1; i < broj; i++) {
@@ -342,14 +342,14 @@ if (broj > 9 && broj < 100) {
 		}
 	}
 } else {
-	console.log("broj nije dvoznamenkast");
+	console.log('broj nije dvoznamenkast');
 }
 
 // 19.
 // Zatražiti unos dvoznamenkastog broja. Ispisati s kojim je brojevima od 1 do 10 djeljiv.
 // Ako nije dvoznamenkast, samo treba ispisati odgovarajuću poruku.
 
-var broj = parseInt(prompt("unesite dvoznamenkasti broj"));
+var broj = parseInt(prompt('unesite dvoznamenkasti broj'));
 
 if (broj > 9 && broj < 100) {
 	for (let i = 1; i <= 10; i++) {
@@ -358,23 +358,23 @@ if (broj > 9 && broj < 100) {
 		}
 	}
 } else {
-	console.log("nije dvoznamenkast");
+	console.log('nije dvoznamenkast');
 }
 
 // 20.
 // Zatražiti od korisnika unos nekog stringa. Ispisati koliko ima samoglasnika u tom stringu.
 // Ispisati prvih 5 slova unesenog stringa.
 
-var text = prompt("unesite neki text");
+var text = prompt('unesite neki text');
 text = text.toLowerCase();
 var brojac = 0;
 for (var i = 0; i < text.length; i++) {
 	if (
-		text[i] === "a" ||
-		text[i] === "e" ||
-		text[i] === "i" ||
-		text[i] === "o" ||
-		text[i] === "u"
+		text[i] === 'a' ||
+		text[i] === 'e' ||
+		text[i] === 'i' ||
+		text[i] === 'o' ||
+		text[i] === 'u'
 	) {
 		brojac++;
 	}
@@ -382,22 +382,22 @@ for (var i = 0; i < text.length; i++) {
 for (let i = 0; i < 5; i++) {
 	console.log(text[i]);
 }
-console.log("broj samoglasnika je" + " " + brojac);
+console.log('broj samoglasnika je' + ' ' + brojac);
 
 // 21.
 // Zatražiti od korisnika unos nekog stringa. Ispisati koliko ima suglasnika u tom stringu.
 // Ispisati prva 3 slova unesenog stringa.
 
-var text = prompt("unesite neki text");
+var text = prompt('unesite neki text');
 text = text.toLowerCase();
 var brojac = 0;
 for (var i = 0; i < text.length; i++) {
 	if (
-		text[i] !== "a" &&
-		text[i] !== "e" &&
-		text[i] !== "i" &&
-		text[i] !== "o" &&
-		text[i] !== "u" &&
+		text[i] !== 'a' &&
+		text[i] !== 'e' &&
+		text[i] !== 'i' &&
+		text[i] !== 'o' &&
+		text[i] !== 'u' &&
 		text[i].charCodeAt() >= 97 &&
 		text[i].charCodeAt() <= 122
 	) {
@@ -407,15 +407,15 @@ for (var i = 0; i < text.length; i++) {
 for (let i = 0; i < 3; i++) {
 	console.log(text[i]);
 }
-console.log("broj suglasnika je" + " " + brojac);
+console.log('broj suglasnika je' + ' ' + brojac);
 
 // 22.
 // Učitati 2 cijela broja, koristeći prompt funkciju i izračunati im zbroj, razliku, umnožak i
 // količnik, ispisati sumu svih parnih brojeva između ta 2 broja, te sumu svih neparnih
 // brojeva između njih, ne uključujući njih.
 
-var broj1 = parseInt(prompt("unesite prvi broj")),
-	broj2 = parseInt(prompt("unesite drugi broj")),
+var broj1 = parseInt(prompt('unesite prvi broj')),
+	broj2 = parseInt(prompt('unesite drugi broj')),
 	zbroj,
 	razlika,
 	umnozak,
@@ -444,16 +444,16 @@ for (let i = broj1; i < broj2; i++) {
 		sumanepar += i;
 	}
 }
-console.log("suma par je- " + sumapar + "suma nepar je- " + sumanepar);
+console.log('suma par je- ' + sumapar + 'suma nepar je- ' + sumanepar);
 
 // 23. Što će se ispisati:
 
 var a = 3,
 	b = 18,
-	c = "6";
+	c = '6';
 for (var i = a; i < b; i += 3) {
 	if (i == c) {
-		console.log(i + " = " + c);
+		console.log(i + ' = ' + c);
 	}
 	if (b % i !== 0) {
 		console.log(i - 1);
@@ -474,10 +474,10 @@ for (var i = a; i < b; i += 3) {
 
 var a = 2,
 	b = 20,
-	c = "6";
+	c = '6';
 for (var i = a; i < b; i += 4) {
 	if (i === c) {
-		console.log(i + " = " + c);
+		console.log(i + ' = ' + c);
 	}
 	if (b % i === 0) {
 		console.log(i);
@@ -528,7 +528,7 @@ var input,
 	suma = 0;
 
 while (brojac <= 5) {
-	input = parseInt(prompt("unesite dvoznamenkast broj"));
+	input = parseInt(prompt('unesite dvoznamenkast broj'));
 	suma += input % 10;
 	brojac++;
 }
@@ -542,13 +542,13 @@ var brojac = 0,
 	input;
 
 while (brojac < Infinity) {
-	input = parseInt(prompt("unesite broj"));
+	input = parseInt(prompt('unesite broj'));
 	brojac++;
 	if (input > 20) {
 		break;
 	}
 }
-console.log("pokusaj broj " + brojac);
+console.log('pokusaj broj ' + brojac);
 
 // 29.
 // Pomoću while petlje omogućite korisniku da unese točno 8 brojeva. Pomoću console.log
@@ -558,11 +558,11 @@ var brojac = 1,
 	niz = [];
 
 while (brojac <= 8) {
-	niz.push(parseInt(prompt("unesite broj")));
+	niz.push(parseInt(prompt('unesite broj')));
 	brojac++;
 }
 console.log(niz[3]);
-console.log("zbroj prvog i petog je: " + (niz[0] + niz[4]));
+console.log('zbroj prvog i petog je: ' + (niz[0] + niz[4]));
 
 // 30.
 // Učitavati brojeve sve dok zbroj unesenih brojeva ne dosegne 100. Na kraju ispisati koliko
@@ -572,7 +572,7 @@ var zbroj = 0,
 	brojac = 1;
 
 while (brojac < Infinity) {
-	zbroj += parseInt(prompt("unesite broj"));
+	zbroj += parseInt(prompt('unesite broj'));
 	if (zbroj >= 100) {
 		break;
 	}
@@ -591,7 +591,7 @@ var brojacpoz = 0,
 	xd = 1;
 
 while (xd < Infinity) {
-	input = parseInt(prompt("unesite broj"));
+	input = parseInt(prompt('unesite broj'));
 	if (input > 0) {
 		brojacpoz++;
 	} else if (input < 0) {
@@ -601,14 +601,14 @@ while (xd < Infinity) {
 		break;
 	}
 }
-console.log("uneseno pozitivnig- " + brojacpoz + " a negativnih- " + brojacneg);
+console.log('uneseno pozitivnig- ' + brojacpoz + ' a negativnih- ' + brojacneg);
 
 // 32.
 // Zatražiti od korisnika da unese 2 broja. Koristeći do-while petlju ispisati neparne brojeve
 // koji se nalaze između ta dva broja.
 
-var broj1 = parseInt(prompt("unesite broj 1")),
-	broj2 = parseInt(prompt("unesite broj 2")),
+var broj1 = parseInt(prompt('unesite broj 1')),
+	broj2 = parseInt(prompt('unesite broj 2')),
 	temp,
 	i = broj1;
 
@@ -644,7 +644,7 @@ var niz = [],
 	input;
 
 do {
-	input = parseInt(prompt("unesite broj"));
+	input = parseInt(prompt('unesite broj'));
 	niz.push(input);
 	zbroj += input;
 } while (zbroj < 50);
@@ -655,35 +655,35 @@ console.log(niz.length);
 // nje i ispišite rečenicu bez njih. To možete spremiti u neku novu varijablu. Potom izbacite
 // sve suglasnike iz iste rečenice te i nju ispišite.
 
-var text = "Hello world je najbolja udruga ikada";
+var text = 'Hello world je najbolja udruga ikada';
 
 function disemvowel(str) {
-	var vowels = ["a", "e", "i", "o", "u"];
+	var vowels = ['a', 'e', 'i', 'o', 'u'];
 
 	return str
-		.split("")
+		.split('')
 		.filter(function (el) {
 			return vowels.indexOf(el.toLowerCase()) === -1;
 		})
-		.join("");
+		.join('');
 }
 var bezsamoglasnika = disemvowel(text);
-console.log("recenica bez samoglasnika je: " + bezsamoglasnika);
+console.log('recenica bez samoglasnika je: ' + bezsamoglasnika);
 
-var niz = text.split("");
+var niz = text.split('');
 for (let i = 0; i < niz.length; i++) {
 	if (
-		niz[i] !== "a" &&
-		niz[i] !== "e" &&
-		niz[i] !== "i" &&
-		niz[i] !== "o" &&
-		niz[i] !== "u"
+		niz[i] !== 'a' &&
+		niz[i] !== 'e' &&
+		niz[i] !== 'i' &&
+		niz[i] !== 'o' &&
+		niz[i] !== 'u'
 	) {
-		niz[i] = "";
+		niz[i] = '';
 	}
 }
-text = niz.join("");
-console.log("recenica bez suglasnika je: " + text);
+text = niz.join('');
+console.log('recenica bez suglasnika je: ' + text);
 
 // 36.
 // Zadan je niz od 10 realnih brojeva: var niz = [ 87, 93, 11, 27, 38, 100, 42, 31, 8, 40 ]
@@ -701,7 +701,7 @@ for (let i = 0; i < niz.length; i++) {
 	}
 }
 
-console.log("najblizi je: " + min + " a najudaljeniji je: " + max);
+console.log('najblizi je: ' + min + ' a najudaljeniji je: ' + max);
 
 // 37.
 // Ako imate deklariran niz: var array = [15, 123, 678, 23, 797, 905, 769, 567, 67], ispišite
@@ -716,24 +716,24 @@ var array = [15, 123, 678, 23, 797, 905, 769, 567, 67],
 if (array.length % 2 !== 0) {
 	srednji = array[index];
 	console.log(
-		"prvi je: " +
+		'prvi je: ' +
 			array[0] +
-			" zadnji je: " +
+			' zadnji je: ' +
 			array[array.length - 1] +
-			" srednji je: " +
+			' srednji je: ' +
 			srednji
 	);
 } else {
 	srednji = array[index];
 	srednji2 = array[index - 1];
 	console.log(
-		"prvi je: " +
+		'prvi je: ' +
 			array[0] +
-			" zadnji je: " +
+			' zadnji je: ' +
 			array[array.length - 1] +
-			" srednji su: " +
+			' srednji su: ' +
 			srednji +
-			" " +
+			' ' +
 			srednji2
 	);
 }
@@ -748,7 +748,7 @@ var niz1 = [],
 	zbroj = 0;
 
 do {
-	input = parseInt(prompt("unesite broj"));
+	input = parseInt(prompt('unesite broj'));
 	niz1.push(input);
 	zbroj += input;
 } while (zbroj < 150);
@@ -774,7 +774,7 @@ var niz1 = [],
 	zbroj = 0;
 
 do {
-	input = parseInt(prompt("unesite broj"));
+	input = parseInt(prompt('unesite broj'));
 	niz1.push(input);
 	zbroj += input;
 } while (zbroj < 250);
@@ -793,7 +793,7 @@ console.log(niz2);
 // Deklarirati niz koji se sastoji od 5 riječi. Napraviti novi niz koji se sastoji samo od onih
 // riječi iz prvog niza koje imaju više od 2 slova.Ispisati novi niz riječi.
 
-var niz1 = ["ovo", "je", "bas", "pet", "rijeci"],
+var niz1 = ['ovo', 'je', 'bas', 'pet', 'rijeci'],
 	niz2 = [];
 
 for (let i = 0; i < niz1.length; i++) {
@@ -802,13 +802,13 @@ for (let i = 0; i < niz1.length; i++) {
 	}
 }
 console.log(
-	"niz sa rijecima iz prvog niza koje imaju vise od 2 slova: " + niz2
+	'niz sa rijecima iz prvog niza koje imaju vise od 2 slova: ' + niz2
 );
 
 // 41.
 // Deklarirati niz koji se sastoji od 5 riječi. Ispisati koja je najduža i najkraća riječ iz niza.
 
-var niz = ["ovaj", "niz", "je", "pet", "rijeci"],
+var niz = ['ovaj', 'niz', 'je', 'pet', 'rijeci'],
 	najduza = niz[0],
 	najkraca = niz[0];
 
@@ -820,7 +820,7 @@ for (let i = 0; i < niz.length; i++) {
 	}
 }
 
-console.log("najduza rijec je: " + najduza + " najkraca rijec je: " + najkraca);
+console.log('najduza rijec je: ' + najduza + ' najkraca rijec je: ' + najkraca);
 
 // 42.
 // Učitati niz od 10 brojeva. Ispisati koliko je parnih, a koliko neparnih brojeva u nizu.
@@ -838,7 +838,7 @@ var input,
 	prosijecnaNeparnig;
 
 for (var i = 0; i < 10; i++) {
-	input = parseInt(prompt("unesite 10 brojeva"));
+	input = parseInt(prompt('unesite 10 brojeva'));
 	niz.push(input);
 
 	if (niz[i] % 2 === 0) {
@@ -855,13 +855,13 @@ for (let i = 0; i < neparni.length; i++) {
 	sumNeparni += neparni[i];
 }
 
-console.log("parnih je: " + parni.length + " neparnih je:" + neparni.length);
-console.log("prosijek parnih je: " + sumParni / parni.length);
+console.log('parnih je: ' + parni.length + ' neparnih je:' + neparni.length);
+console.log('prosijek parnih je: ' + sumParni / parni.length);
 
 if (sumParni > sumNeparni) {
-	console.log("zbroj parnih je veci ");
+	console.log('zbroj parnih je veci ');
 } else {
-	console.log("zbroj neparnih je veci ");
+	console.log('zbroj neparnih je veci ');
 }
 
 // 43.
@@ -877,7 +877,7 @@ var niz = [],
 	veciPremaManjim;
 
 for (let i = 0; i < 10; i++) {
-	input = parseInt(prompt("unesite broj"));
+	input = parseInt(prompt('unesite broj'));
 	niz.push(input);
 }
 
@@ -891,27 +891,27 @@ for (let i = 0; i < niz.length; i++) {
 		min = niz[i];
 	}
 }
-console.log("najmanji je: " + min + " najveci je: " + max);
+console.log('najmanji je: ' + min + ' najveci je: ' + max);
 
 manjiPremaVecem = niz.sort(function (a, b) {
 	return a - b;
 });
-console.log("od najmanjeg do najveceg: " + manjiPremaVecem);
+console.log('od najmanjeg do najveceg: ' + manjiPremaVecem);
 
 veciPremaManjim = niz.sort(function (a, b) {
 	return b - a;
 });
-console.log("od najveceg prema najmanjem: " + veciPremaManjim);
+console.log('od najveceg prema najmanjem: ' + veciPremaManjim);
 
-// TODO Javascript 1
+// * Javascript 1
 
 // 1.
 // Zatražiti od korisnika da unese 2 broja. Ukoliko je prvi broj veći od drugog, pozvati
 // funkciju koja će oduzeti drugi od prvog. U suprotnom, pozvati funkciju koja će ih zbrojiti.
 // Ispisati rezultat u oba slučaja.
 
-var broj1 = parseInt(prompt("unesite prvi broj")),
-	broj2 = parseInt(prompt("unesite prvi broj"));
+var broj1 = parseInt(prompt('unesite prvi broj')),
+	broj2 = parseInt(prompt('unesite prvi broj'));
 
 function oduzimanje(a, b) {
 	return a - b;
@@ -932,32 +932,32 @@ if (broj1 > broj2) {
 // kalkulatora: prima dva broja, i znak operacije. Ovisno o znaku, obaviti traženu operaciju.
 // Funkcija vraća rezultat u glavni program, zatim je on ispisuje.
 
-var broj1 = parseInt(prompt("unesite prvi broj")),
-	broj2 = parseInt(prompt("unesite drugi broj")),
-	operacija = prompt("unesite operaciju");
+var broj1 = parseInt(prompt('unesite prvi broj')),
+	broj2 = parseInt(prompt('unesite drugi broj')),
+	operacija = prompt('unesite operaciju');
 
 function kalkulator(prvi, drugi, operator) {
 	var result;
 	switch (operator) {
-		case "+":
+		case '+':
 			result = prvi + drugi;
 			break;
-		case "-":
+		case '-':
 			result = prvi - drugi;
 			break;
-		case "*":
+		case '*':
 			result = prvi * drugi;
 			break;
-		case "/":
+		case '/':
 			if (drugi === 0) {
 				result = Infinity;
-				console.log("nije moguce dijeliti sa nula: " + result);
+				console.log('nije moguce dijeliti sa nula: ' + result);
 			} else {
 				result = prvi / drugi;
 			}
 			break;
 		default:
-			console.log("pogresan unos");
+			console.log('pogresan unos');
 	}
 	return result;
 }
@@ -970,11 +970,11 @@ console.log(kalkulator(broj1, broj2, operacija));
 //     vratiti true . Ako nije točan, vratiti točan rezultat u glavni program, gdje se zatim treba
 //     ispisati poruka "Vaš odgovor je netočan, točan odgovor glasi: ...".
 
-var odgovor = parseInt(prompt("koliko je 2+2?"));
+var odgovor = parseInt(prompt('koliko je 2+2?'));
 
 function provjera(unos) {
 	if (unos === 4) {
-		console.log("odogovor je tocan");
+		console.log('odogovor je tocan');
 		return true;
 	} else {
 		return 4;
@@ -982,7 +982,7 @@ function provjera(unos) {
 }
 
 if (provjera(odgovor) === 4) {
-	console.log("vas odgovor je netocan tocan odgovor glasi: 4");
+	console.log('vas odgovor je netocan tocan odgovor glasi: 4');
 }
 
 provjera(odgovor);
@@ -991,40 +991,40 @@ provjera(odgovor);
 // Napraviti funkciju koja je na proslijeđeni mjesec vratiti koliko dana ima u tom mjesecu.
 // Rezultat ispisati u glavnom programu.
 
-var mjesec = prompt("unesite mjesec");
+var mjesec = prompt('unesite mjesec');
 
 function daniUMjesecu(mjesec) {
 	switch (mjesec) {
-		case "sijecanj":
-		case "siječanj":
+		case 'sijecanj':
+		case 'siječanj':
 			return 31;
-		case "veljaca":
-		case "veljača":
-			return "28/29";
-		case "ozuljak":
-		case "ožuljak":
+		case 'veljaca':
+		case 'veljača':
+			return '28/29';
+		case 'ozuljak':
+		case 'ožuljak':
 			return 31;
-		case "travanj":
+		case 'travanj':
 			return 30;
-		case "svibanj":
+		case 'svibanj':
 			console.log(31);
 			break;
-		case "lipanj":
+		case 'lipanj':
 			return 30;
-		case "srpanj":
+		case 'srpanj':
 			return 31;
-		case "kolovoz":
+		case 'kolovoz':
 			return 31;
-		case "rujan":
+		case 'rujan':
 			return 30;
-		case "listopad":
+		case 'listopad':
 			return 31;
-		case "studeni":
+		case 'studeni':
 			return 30;
-		case "prosinac":
+		case 'prosinac':
 			return 31;
 		default:
-			console.log("unesite valjani mjesec");
+			console.log('unesite valjani mjesec');
 	}
 }
 
@@ -1035,13 +1035,13 @@ console.log(dani);
 // Pomoću funkcije „check_year()“ provjerite je li godina koju je unio korisnik prijestupna
 // ili ne.
 
-var godina = parseInt(prompt("unesite godinu"));
+var godina = parseInt(prompt('unesite godinu'));
 
 function check_year(unos) {
 	if ((unos % 4 === 0 && unos % 100 !== 0) || unos % 400 === 0) {
-		console.log("godina je prijestupna");
+		console.log('godina je prijestupna');
 	} else {
-		console.log("godina nije prijestupna");
+		console.log('godina nije prijestupna');
 	}
 }
 
@@ -1056,10 +1056,10 @@ var niz = [],
 	input;
 function praviNiz() {
 	for (let i = 1; i <= 5; i++) {
-		input = parseInt(prompt("unesite broj"));
+		input = parseInt(prompt('unesite broj'));
 		niz.push(input);
 	}
-	console.log("napravio sam niz: " + niz);
+	console.log('napravio sam niz: ' + niz);
 }
 praviNiz();
 
@@ -1079,7 +1079,7 @@ check(niz);
 // između 100 i 500 je 1%, između 500 i 1000 je 5%, a preko 1000 10%. Funkcija kao
 // parametar prima iznos, a vraća iznos poreza.
 
-var input = parseInt(prompt("unesite uplaceni iznos")),
+var input = parseInt(prompt('unesite uplaceni iznos')),
 	izracunato;
 
 function izracunPoreza(unos) {
@@ -1095,7 +1095,7 @@ function izracunPoreza(unos) {
 			return unos;
 		}
 	} else {
-		return "unesite valjani iznos";
+		return 'unesite valjani iznos';
 	}
 }
 
@@ -1108,19 +1108,19 @@ console.log(izracunato);
 // od 100 000 primjeraka, treba vratiti 'srebrena', preko 200 000 'zlatna' i preko 500 000
 // 'platinasta'. Funkcija prima broj prodanih primjeraka.
 
-var input = parseInt(prompt("unesite broj prodanih ploca"));
+var input = parseInt(prompt('unesite broj prodanih ploca'));
 
 function vracamTirazu(unos) {
 	if (unos > 0 && unos < 100000) {
-		return "ploca nije presla 100k";
+		return 'ploca nije presla 100k';
 	} else if (unos >= 100000 && unos <= 200000) {
-		return "srebrena";
+		return 'srebrena';
 	} else if (unos > 200000 && unos <= 500000) {
-		return "zlatna";
+		return 'zlatna';
 	} else if (unos > 500000) {
-		return "platinasta";
+		return 'platinasta';
 	} else {
-		return "unesite valjani unos";
+		return 'unesite valjani unos';
 	}
 }
 
@@ -1130,20 +1130,20 @@ console.log(vracamTirazu(input));
 // Napisati funkciju koja će za proslijeđeni tekst vraćati koliko ima dvotočki, a koliko
 // razmaka.
 
-var input = prompt("unesite neki tekst");
-var nizOdInputa = input.split(""),
+var input = prompt('unesite neki tekst');
+var nizOdInputa = input.split(''),
 	brojacDvo = 0,
 	brojacRaz = 0;
 
 function brojiTID(unos) {
 	for (let i = 0; i < unos.length; i++) {
-		if (nizOdInputa[i] === ":") {
+		if (nizOdInputa[i] === ':') {
 			brojacDvo++;
-		} else if (nizOdInputa[i] === " ") {
+		} else if (nizOdInputa[i] === ' ') {
 			brojacRaz++;
 		}
 	}
-	return brojacDvo + " " + brojacRaz;
+	return brojacDvo + ' ' + brojacRaz;
 }
 
 console.log(brojiTID(input));
@@ -1152,10 +1152,10 @@ console.log(brojiTID(input));
 // Napisati funkciju koja će proslijeđenu rečenicu ispisati unatrag, ali i zamijeniti mala i
 // velika slova. Funkciju pozvati u glavnom programu.
 
-var input = prompt("unesite recenicu");
+var input = prompt('unesite recenicu');
 
 function mjenjaRecenicu(unos) {
-	var niz = unos.split(""),
+	var niz = unos.split(''),
 		result = [];
 
 	for (let i = niz.length - 1; i >= 0; i--) {
@@ -1170,7 +1170,7 @@ function mjenjaRecenicu(unos) {
 		}
 	}
 
-	return result.join("");
+	return result.join('');
 }
 
 console.log(mjenjaRecenicu(input));
@@ -1179,7 +1179,7 @@ console.log(mjenjaRecenicu(input));
 // Zatražiti od korisnika da unese neki tekst. Proslijediti tekst funkciji koja će provjeriti je li
 // uneseni tekst palindrom. (Palindrom je riječ koja se isto čita i sprijeda i unatrag.)
 
-var input = prompt("unesite neki tekst");
+var input = prompt('unesite neki tekst');
 
 function palindrom(unos) {
 	unos = unos.toLowerCase();
@@ -1188,11 +1188,11 @@ function palindrom(unos) {
 
 	for (var i = 0; i < mid; i++) {
 		if (unos[i] !== unos[len - 1 - i]) {
-			return "nije palindrom";
+			return 'nije palindrom';
 		}
 	}
 
-	return "palindrom je";
+	return 'palindrom je';
 }
 
 console.log(palindrom(input));
@@ -1206,7 +1206,7 @@ function metriICentrimetri(ucm) {
 	var metri = parseInt(ucm / 100),
 		centimetri = ucm % 100;
 
-	return metri + "m i " + centimetri + "cm";
+	return metri + 'm i ' + centimetri + 'cm';
 }
 
 console.log(metriICentrimetri(178));
@@ -1217,7 +1217,7 @@ console.log(metriICentrimetri(178));
 // „convertToMinutes()“ koja će prvo poslane sate pretvoriti u minute i nakon toga vratiti u
 // glavnu funkciju koja će završiti konverziju.
 
-var sati = parseInt(prompt("unesite sate"));
+var sati = parseInt(prompt('unesite sate'));
 
 function convertToSeconds(unos) {
 	function convertToMinutes(a) {
@@ -1254,31 +1254,31 @@ function top5(brojKoseva) {
 	} else if (brojKoseva >= 38387) {
 		return 1;
 	} else {
-		return "nije u top 5 strijelaca NBA lige";
+		return 'nije u top 5 strijelaca NBA lige';
 	}
 }
 
 function imeIBrojKoseva(ime, brojKoseva) {
-	console.log(ime + ": broj koseva u karijeri je: " + brojKoseva);
+	console.log(ime + ': broj koseva u karijeri je: ' + brojKoseva);
 	console.log(
-		"igrac je medu top 5 strijelaca NBA lige,tocnije na poziciji " +
+		'igrac je medu top 5 strijelaca NBA lige,tocnije na poziciji ' +
 			top5(brojKoseva)
 	);
 }
 
-imeIBrojKoseva("danijel", 39292);
+imeIBrojKoseva('danijel', 39292);
 
 // 15.
 // Ispisati sve property-e objekta i njihove vrijednosti:
 
 var ob = {
-	naziv: "The Wire",
+	naziv: 'The Wire',
 	ocjena: 9.4,
-	autor: "David Simon",
+	autor: 'David Simon',
 };
 
 for (var prop in ob) {
-	console.log(prop + " - " + ob[prop]);
+	console.log(prop + ' - ' + ob[prop]);
 }
 
 // 16.
@@ -1288,27 +1288,27 @@ for (var prop in ob) {
 // ima''+broj katova+''katova i ukupno''+broj stanova+''stanova.''
 
 var zgrada = {
-	adresa: "",
-	brojZgrade: "",
-	brojKatova: "",
-	brojStanova: "",
+	adresa: '',
+	brojZgrade: '',
+	brojKatova: '',
+	brojStanova: '',
 };
 
-zgrada.adresa = prompt("unesite adresu");
-zgrada.brojZgrade = prompt("unesite broj zgrade");
-zgrada.brojKatova = prompt("unesite broj katova");
-zgrada.brojStanova = prompt("unesite broj stanova");
+zgrada.adresa = prompt('unesite adresu');
+zgrada.brojZgrade = prompt('unesite broj zgrade');
+zgrada.brojKatova = prompt('unesite broj katova');
+zgrada.brojStanova = prompt('unesite broj stanova');
 
 console.log(
-	"zivim u zgradi broj: " +
+	'zivim u zgradi broj: ' +
 		zgrada.brojZgrade +
-		" na adresi: " +
+		' na adresi: ' +
 		zgrada.adresa +
-		" koja ima " +
+		' koja ima ' +
 		zgrada.brojKatova +
-		" katova i ukupno " +
+		' katova i ukupno ' +
 		zgrada.brojStanova +
-		" stanova"
+		' stanova'
 );
 
 // 17.
@@ -1319,7 +1319,7 @@ console.log(
 var test = {
 	ostvareni_bodovi: 80,
 	max_bodovi: 100,
-	ocjena: "",
+	ocjena: '',
 	racunajOcjenu() {
 		this.ocjena = Math.round((this.ostvareni_bodovi * 5) / this.max_bodovi);
 	},
@@ -1335,12 +1335,12 @@ console.log(test.ocjena);
 // na Zemlji.)
 
 var osoba = {
-	ime: "john",
-	prezime: "doe",
+	ime: 'john',
+	prezime: 'doe',
 	kilogrami: 80,
 };
 for (var prop in osoba) {
-	console.log(prop + " - " + osoba[prop]);
+	console.log(prop + ' - ' + osoba[prop]);
 }
 
 osoba.racuna = function () {
@@ -1348,9 +1348,9 @@ osoba.racuna = function () {
 };
 
 osoba.racuna();
-console.log("nakon izracuna tezine: ");
+console.log('nakon izracuna tezine: ');
 for (var prop in osoba) {
-	console.log(prop + " - " + osoba[prop]);
+	console.log(prop + ' - ' + osoba[prop]);
 }
 
 // 19.
@@ -1362,10 +1362,10 @@ for (var prop in osoba) {
 
 let grad = {};
 
-let unosIme = prompt("unesi ime grada");
-let unosGradonacelnik = prompt("unesi granonacelnika");
-let unosStanovnici = parseInt(prompt("unesi broj stanovnika"));
-let unosPovrsina = parseInt(prompt("unesi povrsinu grada"));
+let unosIme = prompt('unesi ime grada');
+let unosGradonacelnik = prompt('unesi granonacelnika');
+let unosStanovnici = parseInt(prompt('unesi broj stanovnika'));
+let unosPovrsina = parseInt(prompt('unesi povrsinu grada'));
 
 let regExLetters = /^[A-z]+$/;
 let regExNumbers = /^[0-9]+$/;
@@ -1379,10 +1379,10 @@ if (
 	grad.ime = unosIme;
 	grad.gradonacelnik = unosGradonacelnik;
 	grad.brojStanovnika = unosStanovnici;
-	grad.povrsina = unosPovrsina + " km2";
+	grad.povrsina = unosPovrsina + ' km2';
 	console.log(grad);
 } else {
-	console.log("unesi podatke u ispravnom formatu");
+	console.log('unesi podatke u ispravnom formatu');
 }
 
 // 20.
@@ -1407,7 +1407,7 @@ var time = {
 		return this.convertMinutes() + this.seconds;
 	},
 	print() {
-		console.log(this.hours + ":" + this.minutes + ":" + this.seconds);
+		console.log(this.hours + ':' + this.minutes + ':' + this.seconds);
 	},
 };
 
@@ -1424,9 +1424,9 @@ console.log(time.convertSeconds());
 // godinu).
 
 let objekt = {
-	ime: "marko",
-	prezime: "matic",
-	zanimanje: "webdev",
+	ime: 'marko',
+	prezime: 'matic',
+	zanimanje: 'webdev',
 	godinaPocetkaRada: 2018,
 	get godinaStaza() {
 		return new Date().getFullYear() - this.godinaPocetkaRada;
@@ -1455,10 +1455,10 @@ console.log(objekt.placa);
 // Nakon svakog unosa pozvati odgovarajuću funkciju.
 
 const osoba = {},
-	imeUnos = prompt("unesite ime"),
-	prezimeUnos = prompt("unesite prezime");
+	imeUnos = prompt('unesite ime'),
+	prezimeUnos = prompt('unesite prezime');
 provjera(imeUnos, prezimeUnos);
-const jmbgUnos = prompt("unesite jmbg");
+const jmbgUnos = prompt('unesite jmbg');
 provjeraJMBG(jmbgUnos);
 
 function provjera(ime, prezime) {
@@ -1468,7 +1468,7 @@ function provjera(ime, prezime) {
 		osoba.prezime = prezimeUnos;
 		return 1;
 	} else {
-		console.log("Pogresan unos imena ili prezimena");
+		console.log('Pogresan unos imena ili prezimena');
 		return 0;
 	}
 }
@@ -1478,7 +1478,7 @@ function provjeraJMBG(jmbg) {
 		osoba.jmbg = jmbgUnos;
 		return 1;
 	} else {
-		console.log("Pogresan unos JMBG-a");
+		console.log('Pogresan unos JMBG-a');
 		return 0;
 	}
 }
@@ -1510,32 +1510,32 @@ console.log(`${objekt.R},${objekt.G},${objekt.B}`);
 var knjige = {
 	lektira: [
 		{
-			naziv: "Zločin i kazna",
-			autor: "Fjodor Mihajlovič Dostojevskog",
+			naziv: 'Zločin i kazna',
+			autor: 'Fjodor Mihajlovič Dostojevskog',
 			br_str: 350,
 			godina_izdavanja: 1866,
 		},
 		{
-			naziv: "Vlak u snijegu",
-			autor: "Mato Lovrak",
+			naziv: 'Vlak u snijegu',
+			autor: 'Mato Lovrak',
 			br_str: 150,
 			godina_izdavanja: 1931,
 		},
 		{
-			naziv: "Mali princ",
-			autor: " Antoine de Saint-Exupery",
+			naziv: 'Mali princ',
+			autor: ' Antoine de Saint-Exupery',
 			br_str: 120,
 			godina_izdavanja: 1943,
 		},
 		{
-			naziv: "Rat i mir",
-			autor: "Lav Nikolajevič Tolstoj",
+			naziv: 'Rat i mir',
+			autor: 'Lav Nikolajevič Tolstoj',
 			br_str: 300,
 			godina_izdavanja: 1865,
 		},
 		{
-			naziv: "Ana Karenjina",
-			autor: "Lav Nikolajevič Tolstoj",
+			naziv: 'Ana Karenjina',
+			autor: 'Lav Nikolajevič Tolstoj',
 			br_str: 800,
 			godina_izdavanja: 1873,
 		},
@@ -1550,7 +1550,7 @@ console.log(
 		arr.push(element.naziv);
 	})
 );
-console.log(arr.sort().join(" -- "));
+console.log(arr.sort().join(' -- '));
 
 // 25.
 // Ispisati sve knjige koje imaju preko 300 stranica te ispisati autora koji je napisao više od
@@ -1564,7 +1564,7 @@ knjige.lektira.forEach(function (element) {
 	}
 	arrAutori.push(element.autor);
 });
-console.log(`Knjige koje imaju preko 300str. su: ${arrKnjige.join(", ")}`);
+console.log(`Knjige koje imaju preko 300str. su: ${arrKnjige.join(', ')}`);
 let results = [];
 for (let i = 0; i < arrAutori.length - 1; i++) {
 	if (arrAutori[i] === arrAutori[i + 1]) {
@@ -1572,7 +1572,7 @@ for (let i = 0; i < arrAutori.length - 1; i++) {
 	}
 }
 const uniqueAges = [...new Set(results)];
-console.log(uniqueAges.join(" - "));
+console.log(uniqueAges.join(' - '));
 
 // 26.
 // Dodati knjigu po vašem izboru i nju sortirati kronološki.
@@ -1580,38 +1580,38 @@ console.log(uniqueAges.join(" - "));
 var knjige = {
 	lektira: [
 		{
-			naziv: "Zločin i kazna",
-			autor: "Fjodor Mihajlovič Dostojevskog",
+			naziv: 'Zločin i kazna',
+			autor: 'Fjodor Mihajlovič Dostojevskog',
 			br_str: 350,
 			godina_izdavanja: 1866,
 		},
 		{
-			naziv: "Vlak u snijegu",
-			autor: "Mato Lovrak",
+			naziv: 'Vlak u snijegu',
+			autor: 'Mato Lovrak',
 			br_str: 150,
 			godina_izdavanja: 1931,
 		},
 		{
-			naziv: "Mali princ",
-			autor: " Antoine de Saint-Exupery",
+			naziv: 'Mali princ',
+			autor: ' Antoine de Saint-Exupery',
 			br_str: 120,
 			godina_izdavanja: 1943,
 		},
 		{
-			naziv: "Rat i mir",
-			autor: "Lav Nikolajevič Tolstoj",
+			naziv: 'Rat i mir',
+			autor: 'Lav Nikolajevič Tolstoj',
 			br_str: 300,
 			godina_izdavanja: 1865,
 		},
 		{
-			naziv: "Ana Karenjina",
-			autor: "Lav Nikolajevič Tolstoj",
+			naziv: 'Ana Karenjina',
+			autor: 'Lav Nikolajevič Tolstoj',
 			br_str: 800,
 			godina_izdavanja: 1873,
 		},
 		{
-			naziv: "The Last Wish",
-			autor: "Andrzej Sapkowski",
+			naziv: 'The Last Wish',
+			autor: 'Andrzej Sapkowski',
 			br_str: 288,
 			godina_izdavanja: 1993,
 		},
@@ -1623,35 +1623,35 @@ console.log(
 		arr.push(element.naziv);
 	})
 );
-console.log(arr.sort().join(" -- "));
+console.log(arr.sort().join(' -- '));
 
 // 27.
 // Zadan je objekt:
 
 var phonebook = {
 	contact1: {
-		firstName: "Ana",
-		lastName: "Anic",
-		phoneNumber: "063/111-111",
-		address: ["Ante Starcevica", "9", "Mostar", "88000"],
+		firstName: 'Ana',
+		lastName: 'Anic',
+		phoneNumber: '063/111-111',
+		address: ['Ante Starcevica', '9', 'Mostar', '88000'],
 	},
 	contact2: {
-		firstName: "Ante",
-		lastName: "Antic",
-		phoneNumber: "063/222-111",
-		address: ["Hrvatske mladeži", "7", "Mostar", "88000"],
+		firstName: 'Ante',
+		lastName: 'Antic',
+		phoneNumber: '063/222-111',
+		address: ['Hrvatske mladeži', '7', 'Mostar', '88000'],
 	},
 	contact3: {
-		firstName: "Marko",
-		lastName: "Markic",
-		phoneNumber: "063/222-333",
-		address: ["Kraljice Katarine", "10", "Grude", "88340"],
+		firstName: 'Marko',
+		lastName: 'Markic',
+		phoneNumber: '063/222-333',
+		address: ['Kraljice Katarine', '10', 'Grude', '88340'],
 	},
 	contact4: {
-		firstName: "Hrvoje",
-		lastName: "Horvat",
-		phoneNumber: "098/2522-111",
-		address: ["Jarunskaulica", "12", "Zagreb", "10000"],
+		firstName: 'Hrvoje',
+		lastName: 'Horvat',
+		phoneNumber: '098/2522-111',
+		address: ['Jarunskaulica', '12', 'Zagreb', '10000'],
 	},
 };
 
@@ -1663,12 +1663,12 @@ function print(phonebook) {
 	});
 
 	for (let i = 0; i < phoneArr.length; i++) {
-		if (typeof phoneArr[i] !== "function") {
+		if (typeof phoneArr[i] !== 'function') {
 			console.log(
-				"Name: " + phoneArr[i].firstName + " " + phoneArr[i].lastName
+				'Name: ' + phoneArr[i].firstName + ' ' + phoneArr[i].lastName
 			);
-			console.log("Number: " + phoneArr[i].phoneNumber);
-			console.log("City: " + phoneArr[i].address[2]);
+			console.log('Number: ' + phoneArr[i].phoneNumber);
+			console.log('City: ' + phoneArr[i].address[2]);
 		}
 	}
 }
@@ -1680,10 +1680,10 @@ print(phonebook);
 // pozvati metodu te ispisati podatke nađenog kontakta ili odgovarajuću poruku.
 // TODO idk atm
 phonebook.search = function (name) {
-	var name = prompt("Enter name for search: ");
+	var name = prompt('Enter name for search: ');
 	var contacts = [];
 	Object.keys(phonebook).forEach(function (contact) {
-		if (typeof phonebook[contact] !== "function") {
+		if (typeof phonebook[contact] !== 'function') {
 			if (phonebook[contact].firstName.toLowerCase() === name.toLowerCase()) {
 				contacts.push(phonebook[contact]);
 			}
@@ -1705,15 +1705,15 @@ phonebook.search = function (name) {
 
 function addNewContact() {
 	let contact = {};
-	contact.firstName = prompt("Enter first name:");
-	contact.lastName = prompt("Enter last name:");
-	contact.phoneNumber = prompt("Enter phone number in format xxx/xxx-xxx:");
+	contact.firstName = prompt('Enter first name:');
+	contact.lastName = prompt('Enter last name:');
+	contact.phoneNumber = prompt('Enter phone number in format xxx/xxx-xxx:');
 	contact.address = [];
-	contact.address.push(prompt("Enter street name:"));
-	contact.address.push(prompt("Enter street number:"));
-	contact.address.push(prompt("Enter city:"));
-	contact.address.push(prompt("Enter post code:"));
-	phonebook["contact5"] = contact;
+	contact.address.push(prompt('Enter street name:'));
+	contact.address.push(prompt('Enter street number:'));
+	contact.address.push(prompt('Enter city:'));
+	contact.address.push(prompt('Enter post code:'));
+	phonebook['contact5'] = contact;
 }
 
 // 30.
@@ -1722,7 +1722,7 @@ function addNewContact() {
 
 function deleteContact(ime) {
 	for (kontakt in phonebook) {
-		if (typeof phonebook[kontakt] !== "function") {
+		if (typeof phonebook[kontakt] !== 'function') {
 			if (ime.toLowerCase() === phonebook[kontakt].firstName.toLowerCase()) {
 				delete phonebook[kontakt];
 			}
@@ -1730,7 +1730,7 @@ function deleteContact(ime) {
 	}
 }
 
-let imeZaIzbrisat = prompt("Unesite koje ime zelite izbrisat");
+let imeZaIzbrisat = prompt('Unesite koje ime zelite izbrisat');
 
 deleteContact(imeZaIzbrisat);
 console.log(phonebook);
@@ -1741,8 +1741,8 @@ console.log(phonebook);
 // trajanje filma. (setTimeout()).
 
 let film = {
-	naziv: "Avengers:Age of Ultron",
-	zanr: "action",
+	naziv: 'Avengers:Age of Ultron',
+	zanr: 'action',
 	trajanje: 141,
 	print: function () {
 		var today = new Date(),
@@ -1750,7 +1750,7 @@ let film = {
 			m = today.getMinutes(),
 			s = today.getSeconds();
 		console.log(
-			"Film " + this.naziv + " je zavrsio u " + h + ":" + m + ":" + s
+			'Film ' + this.naziv + ' je zavrsio u ' + h + ':' + m + ':' + s
 		);
 	},
 };
@@ -1786,9 +1786,9 @@ const funkcija1 = (callback) => {
 };
 
 const funkcija2 = (osoba) => {
-	osoba.ime = prompt("unesite ime");
-	osoba.prezime = prompt("unesite prezime");
-	osoba.brojGodina = Number(prompt("unesite godine"));
+	osoba.ime = prompt('unesite ime');
+	osoba.prezime = prompt('unesite prezime');
+	osoba.brojGodina = Number(prompt('unesite godine'));
 	console.log(`Iz druge funkcije`);
 	console.log(osoba);
 };
@@ -1798,9 +1798,24 @@ funkcija1(funkcija2);
 // 34.
 // Deklarirati objekt „osoba“ sa svojstvima ime, sitost te metode „nahrani“ i „izgladni“ koje
 // trebaju povećati, odnosno smanjiti sitost za 1. U glavnom programu koristeći
-// 18
 // setTimeout() nakon 5 sekundi pozvati metodu „izgladni“, te ispisati poruku "Gladan
 // sam", zatim nakon 3 sekunde pozvati metodu „nahrani“ i ispisati "Sit sam".
+
+const osoba = {
+	ime: 'Danijel',
+	sitost: 1,
+	nahrani() {
+		this.sitost++;
+		console.log('Sit sam');
+	},
+	izgladni() {
+		this.sitost--;
+		console.log('Gladan sam');
+	},
+};
+
+setTimeout(osoba.izgladni.bind(osoba), 5000);
+setTimeout(osoba.nahrani.bind(osoba), 8000);
 
 // 35.
 // Deklarirati dvije funkcije. Iz glavnog programa pozvati prvu funkciju i proslijediti joj
@@ -1915,7 +1930,7 @@ funkcija1(funkcija2);
 // Objektu dodati i metodu koja prima poziciju i callback. Ona treba dodati poziciju u niz
 // pozicija u objektu, preko callbacka dohvatiti broj bodova za tu poziciju i ispisati ju.
 
-// TODO Javascript 2
+// * Javascript 2
 
 // 1.
 // Otvorite http://nsoft.ba/js-tecaj-b/ i kopirajte JSON podatke o proizvodima u varijablu
@@ -1925,39 +1940,39 @@ funkcija1(funkcija2);
 var json = {
 	products: {
 		76: {
-			id: "76",
-			name: "Kruh",
-			price: "KM 1.65",
-			qty: "4",
-			ingredients: ["sol", "brasno", "voda", "kvasac"],
+			id: '76',
+			name: 'Kruh',
+			price: 'KM 1.65',
+			qty: '4',
+			ingredients: ['sol', 'brasno', 'voda', 'kvasac'],
 		},
 		14: {
-			id: "14",
-			name: "Mlijeko",
-			price: "KM 1.43",
-			qty: "12",
-			ingredients: ["kravlje mlijeko"],
+			id: '14',
+			name: 'Mlijeko',
+			price: 'KM 1.43',
+			qty: '12',
+			ingredients: ['kravlje mlijeko'],
 		},
 		48: {
-			id: "48",
-			name: "Secer",
-			price: "KM 2.64",
-			qty: "1",
-			ingredients: ["secerna trska"],
+			id: '48',
+			name: 'Secer',
+			price: 'KM 2.64',
+			qty: '1',
+			ingredients: ['secerna trska'],
 		},
 		89: {
-			id: "89",
-			name: "Brasno5kg",
-			price: "KM 6.90",
-			qty: "1",
-			ingredients: ["psenica", "sjemenke"],
+			id: '89',
+			name: 'Brasno5kg',
+			price: 'KM 6.90',
+			qty: '1',
+			ingredients: ['psenica', 'sjemenke'],
 		},
 		5: {
-			id: "5",
-			name: "Argeta",
-			price: "KM 1.33",
-			qty: "3",
-			ingredients: ["piletina", "sol", "zacini"],
+			id: '5',
+			name: 'Argeta',
+			price: 'KM 1.33',
+			qty: '3',
+			ingredients: ['piletina', 'sol', 'zacini'],
 		},
 	},
 };
@@ -1992,49 +2007,49 @@ var json = {
 
 var putovanje = {
 	putovanje1: {
-		grad: "London",
-		cijena_putovanja: "580€",
-		trajanje_putovanja: "130min",
-		polazak: "1. svibanj 2015.",
-		povratak: "10. svibanj 2015.",
-		osiguran_smjestaj: "da",
-		organizator: "Crno jaje",
+		grad: 'London',
+		cijena_putovanja: '580€',
+		trajanje_putovanja: '130min',
+		polazak: '1. svibanj 2015.',
+		povratak: '10. svibanj 2015.',
+		osiguran_smjestaj: 'da',
+		organizator: 'Crno jaje',
 	},
 	putovanje2: {
-		grad: "Pariz",
-		cijena_putovanja: "600€",
-		trajanje_putovanja: "105min",
-		polazak: "15. svibanj 2015.",
-		povratak: "22. svibanj 2015.",
-		osiguran_smjestaj: "da",
-		organizator: "Crno jaje",
+		grad: 'Pariz',
+		cijena_putovanja: '600€',
+		trajanje_putovanja: '105min',
+		polazak: '15. svibanj 2015.',
+		povratak: '22. svibanj 2015.',
+		osiguran_smjestaj: 'da',
+		organizator: 'Crno jaje',
 	},
 	putovanje3: {
-		grad: "Torino",
-		cijena_putovanja: "120€",
-		trajanje_putovanja: "40min",
-		polazak: "14. travanj 2015.",
-		povratak: "16. travanj 2015.",
-		osiguran_smjestaj: "da",
-		organizator: "Trivago",
+		grad: 'Torino',
+		cijena_putovanja: '120€',
+		trajanje_putovanja: '40min',
+		polazak: '14. travanj 2015.',
+		povratak: '16. travanj 2015.',
+		osiguran_smjestaj: 'da',
+		organizator: 'Trivago',
 	},
 	putovanje4: {
-		grad: "London",
-		cijena_putovanja: "150€",
-		trajanje_putovanja: "130min",
-		polazak: "1. svibanj 2015.",
-		povratak: "10. svibanj 2015.",
-		osiguran_smjestaj: "ne",
-		organizator: "Crno jaje",
+		grad: 'London',
+		cijena_putovanja: '150€',
+		trajanje_putovanja: '130min',
+		polazak: '1. svibanj 2015.',
+		povratak: '10. svibanj 2015.',
+		osiguran_smjestaj: 'ne',
+		organizator: 'Crno jaje',
 	},
 	putovanje5: {
-		grad: "Munchen",
-		cijena_putovanja: "100€",
-		trajanje_putovanja: "80min",
-		polazak: "1. svibanj 2015.",
-		povratak: "10. svibanj 2015.",
-		osiguran_smjestaj: "ne",
-		organizator: "Trivago",
+		grad: 'Munchen',
+		cijena_putovanja: '100€',
+		trajanje_putovanja: '80min',
+		polazak: '1. svibanj 2015.',
+		povratak: '10. svibanj 2015.',
+		osiguran_smjestaj: 'ne',
+		organizator: 'Trivago',
 	},
 };
 // Ispisati sva putovanja koja organizira Crno jaje, te ispisati broj putovanja koja organizira
@@ -2125,87 +2140,87 @@ var jsonObj = {
 	phones: [
 		{
 			id: 6144,
-			name: "Sony Xperia Z2",
-			manufacturer: "Sony",
-			ram: "3 GB",
-			internal_memory: "16 GB",
-			cpu: "Quad-core 2.3 GHz Krait 400",
-			back_camera: "20.7 MP",
-			front_camera: "2.2 MP",
-			gpu: "Adreno 330",
-			battery: "3200 mAh",
-			battery_removable: "no",
-			price: "490 EUR",
+			name: 'Sony Xperia Z2',
+			manufacturer: 'Sony',
+			ram: '3 GB',
+			internal_memory: '16 GB',
+			cpu: 'Quad-core 2.3 GHz Krait 400',
+			back_camera: '20.7 MP',
+			front_camera: '2.2 MP',
+			gpu: 'Adreno 330',
+			battery: '3200 mAh',
+			battery_removable: 'no',
+			price: '490 EUR',
 		},
 		{
 			id: 6033,
-			name: "Samsung Galaxy S5",
-			manufacturer: "Samsung",
-			ram: "2 GB",
-			internal_memory: "32 GB",
-			cpu: "Quad-core 2.5 GHz Krait 400",
-			back_camera: "16 MP",
-			front_camera: "2 MP",
-			gpu: "Adreno 330",
-			battery: "2800 mAh",
-			battery_removable: "yes",
-			price: "430 EUR",
+			name: 'Samsung Galaxy S5',
+			manufacturer: 'Samsung',
+			ram: '2 GB',
+			internal_memory: '32 GB',
+			cpu: 'Quad-core 2.5 GHz Krait 400',
+			back_camera: '16 MP',
+			front_camera: '2 MP',
+			gpu: 'Adreno 330',
+			battery: '2800 mAh',
+			battery_removable: 'yes',
+			price: '430 EUR',
 		},
 		{
 			id: 5705,
-			name: "LG Nexus 5",
-			manufacturer: "LG",
-			ram: "3 GB",
-			internal_memory: "16 GB",
-			cpu: "Quad-core 2.3 GHz Krait 400",
-			back_camera: "8 MP",
-			front_camera: "1.3 MP",
-			gpu: "Adreno 330",
-			battery: "2300 mAh",
-			battery_removable: "no",
-			price: "260 EUR",
+			name: 'LG Nexus 5',
+			manufacturer: 'LG',
+			ram: '3 GB',
+			internal_memory: '16 GB',
+			cpu: 'Quad-core 2.3 GHz Krait 400',
+			back_camera: '8 MP',
+			front_camera: '1.3 MP',
+			gpu: 'Adreno 330',
+			battery: '2300 mAh',
+			battery_removable: 'no',
+			price: '260 EUR',
 		},
 		{
 			id: 6077,
-			name: "LG G2 mini",
-			manufacturer: "LG",
-			ram: "1 GB",
-			internal_memory: "8 GB",
-			cpu: "Quad-core 1.2 GHz Cortex-A7",
-			back_camera: "8 MP",
-			front_camera: "1.3 MP",
-			gpu: "Adreno 305",
-			battery: "2440 mAh",
-			battery_removable: "yes",
-			price: "230 EUR",
+			name: 'LG G2 mini',
+			manufacturer: 'LG',
+			ram: '1 GB',
+			internal_memory: '8 GB',
+			cpu: 'Quad-core 1.2 GHz Cortex-A7',
+			back_camera: '8 MP',
+			front_camera: '1.3 MP',
+			gpu: 'Adreno 305',
+			battery: '2440 mAh',
+			battery_removable: 'yes',
+			price: '230 EUR',
 		},
 		{
 			id: 5497,
-			name: "Sony Xperia M",
-			manufacturer: "Sony",
-			ram: "1 GB",
-			internal_memory: "4 GB",
-			cpu: "Dual-core 1 GHz Krait",
-			back_camera: "5 MP",
-			front_camera: "VGA",
-			gpu: "Adreno 305",
-			battery: "1750 mAh",
-			battery_removable: "yes",
-			price: "110 EUR",
+			name: 'Sony Xperia M',
+			manufacturer: 'Sony',
+			ram: '1 GB',
+			internal_memory: '4 GB',
+			cpu: 'Dual-core 1 GHz Krait',
+			back_camera: '5 MP',
+			front_camera: 'VGA',
+			gpu: 'Adreno 305',
+			battery: '1750 mAh',
+			battery_removable: 'yes',
+			price: '110 EUR',
 		},
 		{
 			id: 3724,
-			name: "Samsung Galaxy Ace",
-			manufacturer: "Samsung",
-			ram: "512 MB",
-			internal_memory: "158 MB",
-			cpu: "800 MHz ARM 11",
-			back_camera: "5 MP",
-			front_camera: "no",
-			gpu: "Adreno 200",
-			battery: "1350 mAh",
-			battery_removable: "yes",
-			price: "90 EUR",
+			name: 'Samsung Galaxy Ace',
+			manufacturer: 'Samsung',
+			ram: '512 MB',
+			internal_memory: '158 MB',
+			cpu: '800 MHz ARM 11',
+			back_camera: '5 MP',
+			front_camera: 'no',
+			gpu: 'Adreno 200',
+			battery: '1350 mAh',
+			battery_removable: 'yes',
+			price: '90 EUR',
 		},
 	],
 };
