@@ -1842,6 +1842,24 @@ funkcija1(funkcija2);
 // pozove. Napraviti funkciju koja ispisuje koliki je broj rezerviranih stolova. Tu funkciju
 // proslijediti kao callback funkciju metodi „rezerviraj_stol“. Rezervirajte 5 stolova.
 
+const stol = {
+	visina: 2,
+	sirina: 1,
+	brojRezerviranihStolova: 0,
+	rezervirajStol(callback) {
+		this.brojRezerviranihStolova++;
+		callback();
+	},
+	ispisBrojRezerviranihStolova() {
+		console.log(`Broj rezerviranih stolova je ${stol.brojRezerviranihStolova}`);
+	},
+};
+
+const kolikoRezervacija = Number(prompt('Koliko stolova zelite rezervirati'));
+for (let i = 1; i <= kolikoRezervacija; i++) {
+	stol.rezervirajStol(stol.ispisBrojRezerviranihStolova);
+}
+
 // 37.
 // Deklarirati dvije funkcije. Prva funkcija prima drugu funkciju kao callback. U prvoj
 // funkciji zatražiti od korisnika da unesi brojeve sve dok ne unese broj 5. Brojeve spremiti u
