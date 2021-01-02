@@ -1866,6 +1866,24 @@ for (let i = 1; i <= kolikoRezervacija; i++) {
 // niz. Zatim niz proslijediti drugoj funkciji koja će svaki uneseni paran broj podijeliti sa
 // dva. Novi niz ispisati kao rezultat.
 
+const prvaFunkcija = (callback) => {
+	const nizBrojeva = [];
+	let broj;
+	while (broj !== 5) {
+		broj = Number(prompt('Unesite broj'));
+		nizBrojeva.push(broj);
+		console.log(nizBrojeva);
+	}
+	callback(nizBrojeva);
+};
+
+const drugaFunkcija = (niz) => {
+	const noviNiz = niz.map((el) => (el % 2 === 0 ? el / 2 : el));
+	console.log(noviNiz);
+};
+
+prvaFunkcija(drugaFunkcija);
+
 // 38.
 // Deklarirati 3 funkcije proizvoljnog imena. Prva kao callback prima drugu, a druga kao
 // callback prima treću. U glavnom programu zatražiti od korisnika da unese kilometre.
