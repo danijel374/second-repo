@@ -1893,6 +1893,27 @@ prvaFunkcija(drugaFunkcija);
 // nautičke milje (1852 m). Sada ispisati rezultat u kilometrima, kopnenim miljama i
 // nautičkim miljama.
 
+const kilometri = Number(prompt('unesite kilometre'));
+const funkcija1 = (funkcija2) => {
+	console.log(`Korsnik je unio ${kilometri} kilometar/a`);
+	const kilometriUMetre = kilometri * 1000;
+	funkcija2(kilometriUMetre);
+};
+
+const funkcija2 = (kilometriUMetre) => {
+	const milje = (kilometriUMetre / 1609.344).toFixed(2);
+	console.log(`To je ${milje} kopnenih milja`);
+	funkcija3(kilometriUMetre, milje);
+};
+
+const funkcija3 = (metri, milje) => {
+	const nautickeMilje = metri * 0.000539957;
+	console.log(`To je ${nautickeMilje} nautickih milja`);
+	console.log(`a kopnenih milja ${milje}`);
+};
+
+funkcija1(funkcija2);
+
 // 39.
 // Deklarirati objekt „desert“ sa svojstvima naziv, vrsta(npr.kolač, torta, palačinka...),
 // broj_komada i težina u gramima (svakog komada) te popuniti proizvoljnim vrijednostima.
